@@ -1,0 +1,22 @@
+<div class="row g-3">
+  <div class="offset-md-2 col-md-4 btn btn-primary">
+  text text
+  </div>
+</div>
+
+<div class="row g-3">
+  <% @users.each do |user| %>
+    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
+      <%= link_to user_path(user), class: "text-decoration-none text-dark" do %>
+        <div class="card">
+          <div class="card-body">
+            <div class="card-text fw-bold"><span class="text-secondary"> Meet a friend in </span><span class="text-primary"><%= user.location %></span></div>
+            <div class="card-title text-truncate fw-bold"><%= user.nickname %></div>
+            <div class="card-text text-truncate"><%= user.age %></div>
+            <div class="card-text text-truncate"><%= user.about %></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
