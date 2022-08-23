@@ -1,0 +1,45 @@
+.card{
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  border: white;  
+}
+.card-user {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  transition: border 1s;
+}
+
+.icons {
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-user .p {
+  font-family: "Kentledge","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card-user .h2 {
+  font-family: "Kentledge","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.card-user a {
+  text-decoration: none;
+  color:burlywood;
+}

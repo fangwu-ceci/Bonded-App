@@ -1,0 +1,31 @@
+<div class="row g-3">
+  <% @users.each do |user| %>
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <%= link_to user_path(user), class: "text-decoration-none text-dark" do %>
+        <div class="card">
+          <div class="card-user" style="background-color :white">
+            <div class="card-title">
+              <img class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
+             <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
+            </div>
+            <div class="card-text">
+              <p class="text-md-left">Age <%= user.age %>, Based in <%= user.location %></p>
+            </div>
+            <div class="card-text">
+              <p class="text-md-left"><%= user.about %></p>
+            </div>
+            <div class="card-text fw-bold">
+              <p>Join her/his <a href = "#"> Group</a></p>
+             </div>
+            <a href="#" class="btn"> Message</a>
+          </div>
+        <div class="icons">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
