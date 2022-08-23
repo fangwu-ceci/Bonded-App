@@ -1,11 +1,23 @@
+h2 {
+  font-size: "Kentledge","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-top: 100px;
+  padding: 40px;
+  font-size: 40px;
+  line-height: 30px;
+}
+
+p {
+
+}
+
 .card{
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
   border-radius: 20px;
-  border: white;  
+  border: white;
 }
 .card-user {
   display: flex;
