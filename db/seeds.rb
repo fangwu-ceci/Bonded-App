@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+Group.delete_all
+
+10.times do
+  Group.create!(
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: Faker::Address.city,
+    category: Faker::Hobby.activity
+  )
+end
