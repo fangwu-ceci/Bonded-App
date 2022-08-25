@@ -1,0 +1,11 @@
+
+.btn {
+  border-radius: 8px;
+  background-color: #ece4db;
+  color: white ;
+  transition-duration: 0.4s;
+
+  &:hoover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
