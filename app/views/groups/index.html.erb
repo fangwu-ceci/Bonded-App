@@ -1,15 +1,15 @@
-<div class="container">
+<div class="group-container container">
   <div class="heading">
-    <h2>There are <%= @groups.count %> groups near you</h2>
+    <h1><strong>There are <%= @groups.count %> groups near you</strong></h1>
   </div>
-  <select class="dropdown_1 btn btn-secondary btn-sm" name="distance" id="distance">
+  <select class="dropdown btn" name="distance" id="distance">
     <option disabled selected value="distance">Distance</option>
     <option value="5-miles">5 miles</option>
     <option value="10-miles">10 miles</option>
     <option value="25-miles">25 miles</option>
     <option value="Any-distance">Any distance</option>
   </select>
-  <select class="dropdown_2 btn btn-secondary btn-sm" name="category" id="category">
+  <select class="dropdown btn" name="category" id="category">
     <option disabled selected value="category">Category</option>
     <option value="art">Art</option>
     <option value="sports">Sports</option>
@@ -17,38 +17,17 @@
     <option value="any-category">Any category</option>
   </select>
   <div class="group-cards-container">
+  <% @groups.each do |group| %>
     <div class="group-card">
-      <img class="group-img" src="https://secure-content.meetupstatic.com/images/classic-events/503457525/178x178.jpg" alt="">
+      <img class="group-img" src=<%= group.image_url %> alt="">
       <div class="group-card-info">
-        <h3>Group Name</h3>
-        <h4>Location</h4>
-        <p>This will be the about of the card</p>
+        <h3><strong><%= link_to group.name, group_path(group) %></strong></h3>
+        <h3><%= group.location %></h3>
+        <h4><%= group.category %></h4>
+        <p><%= group.about %></p>
       </div>
     </div>
-     <div class="group-card">
-      <img class="group-img" src="https://secure-content.meetupstatic.com/images/classic-events/503457525/178x178.jpg" alt="">
-      <div class="group-card-info">
-        <h3>Group Name</h3>
-        <h4>Location</h4>
-        <p>This will be the about of the card</p>
-      </div>
-    </div>
-     <div class="group-card">
-      <img class="group-img" src="https://secure-content.meetupstatic.com/images/classic-events/503457525/178x178.jpg" alt="">
-      <div class="group-card-info">
-        <h3>Group Name</h3>
-        <h4>Location</h4>
-        <p>This will be the about of the card</p>
-      </div>
-    </div>
-     <div class="group-card">
-        <img class="group-img" src="https://secure-content.meetupstatic.com/images/classic-events/503457525/178x178.jpg" alt="">
-      <div class="group-card-info">
-        <h3>Group Name</h3>
-        <h4>Location</h4>
-        <p>This will be the about of the card</p>
-      </div>
-    </div>
+    <% end %>
   </div>
 
 </div>

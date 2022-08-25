@@ -1,5 +1,9 @@
+.group-container {
+  background-color: #fbecea;;
+}
+
 .group-cards-container {
-  margin-top: 16px;
+  margin-top: 32px;
 }
 
 
@@ -11,12 +15,15 @@
 .group-card-info {
   padding-left: 16px;
   padding-top: 24px;
+  font-family: 'Neucha', cursive;
+  color: #7f0924;
 }
 
 .heading {
-  padding-top: 240px;
+  padding-top: 48px;
+  padding-bottom: 32px;
 }
 
 .group-img {
-  border-radius: 50%;
+  border-radius: 8px;
 }

@@ -1,15 +1,12 @@
-.dropdown_1 {
-  border-radius: 40px;
-  font-size: 14px;
-  line-height: 1;
-  color: white;
-  background-color: #008294;
+.dropdown {
+  background-color: #fe5055;
+  border: 3px solid #fe5055;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #fff;
 }
 
-.dropdown_2 {
-  border-radius: 40px;
-  font-size: 14px;
-  line-height: 1;
-  color: white;
-  background-color: #008294;
+.dropdown:hover {
+  border: 3px solid #fe5055;
 }
