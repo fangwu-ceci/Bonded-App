@@ -1,13 +1,13 @@
 <div class="container" >
   <div class="card-header text-center">
-    <h2 class="card-title fw-bold "> 
+    <h2 class="card-title fw-bold ">
+    Want to find someone to talk to?
     Find a friend nearby
     </h2>
     <p class="fw-light">
     "We support you through the journey of getting to know your new friends, and recommend great groups for you to join together"
     <p>
   </div>
-  <%= render 'shared/search' %>
   <div class="row g-3">
     <% @users.each do |user| %>
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -15,7 +15,7 @@
           <div class="card">
             <div class="card-user" style="background-color :white">
               <div class="card-title">
-                <img class="avatar-large" <%= image_tag user.avatar_url %>
+                <img class="avatar-large" <%= image_tag user.avatar_url %> >
               <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
               </div>
               <div class="card-text">
