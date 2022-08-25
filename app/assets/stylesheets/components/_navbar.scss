@@ -3,7 +3,10 @@
   background: white;
   transition: 0.5s background-color ease;
   background-color:#fbecea;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -20,4 +23,3 @@
 //   top: 0;
 //   width: 100%
 // }
-

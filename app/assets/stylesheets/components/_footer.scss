@@ -1,6 +1,6 @@
 .footer-body {
   background-color:black;
-  margin: 60px;
+  margin-top: 60px;
 }
 
 .footer-wrapper {
@@ -37,6 +37,10 @@
   text-decoration: none;
 }
 
+.footer-contact ul {
+  width: 100%;
+  display: flex;
+}
 
 .footer-contact li {
   list-style: none;
@@ -46,6 +50,7 @@
   margin: 30px auto 0;
   color:#fff;
   display: table-caption;
+  margin: 0 8px;
 }
 .footer-contact a {
   text-decoration: none;
