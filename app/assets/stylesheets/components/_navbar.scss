@@ -3,6 +3,10 @@
   background: white;
   transition: 0.5s background-color ease;
   background-color:#fbecea;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -13,8 +17,9 @@
   width: 40px;
 }
 
-.navbar-lewagon-sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+
+// .navbar-lewagon-sticky {
+//   position: fixed;
+//   top: 0;
+//   width: 100%
+// }
