@@ -72,7 +72,7 @@ h2 {
     padding-bottom: 50px;
     background-color: rgba(248, 231, 233, 0.5);
     font-family: 'Kentledge';
-    .btn {
+    .bond-btn {
       margin-top: 30px;
       margin-bottom: 25px;
       padding: 9px 16px;
@@ -85,7 +85,7 @@ h2 {
   }
 }
 
-.btn {
+.bond-btn {
   color: #fff;
   background-color: #fe5055;
 }
@@ -99,6 +99,8 @@ h2 {
   color: #fff;
 }
 .button-neon:hover {
+  background-color: transparent;
+  color: black;
   box-shadow: 0 0 10px 0 #fe5055 inset, 0 0 20px 2px #fe5055;
   border: 3px solid #fe5055;
 }
