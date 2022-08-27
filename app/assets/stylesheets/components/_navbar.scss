@@ -2,7 +2,7 @@
   justify-content: space-between;
   background: white;
   transition: 0.5s background-color ease;
-  background-color:#fbecea;
+  background-color: #fbf3f4;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,6 +15,53 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+  width: 150px;
+}
+
+.navbar-brand {
+  display: flex;
+  font-family: 'DynaPuff', cursive;
+  font-size: x-large;
+}
+
+.navbar-nav {
+  display: flex;
+  font-family: 'Kentledge';
+  font-size: 18px;
+  align-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  grid-gap: 40px;
+  a {
+    color: #1c1c1e;
+  }
+}
+
+.footer-contact ul {
+  width: 100%;
+  display: flex;
+  grid-gap: 40px;
+  margin: 30px auto 0;
+
+  a {
+    font-size: 20px;
+  }
+}
+
+.footer-contact {
+  font-family: 'Kentledge';
+  .m-0 {
+    font-size: 18px;
+  }
+  a {
+    display: block;
+    padding: 10px;
+  }
+}
+
+.footer-link {
+  font-family: 'Kentledge';
+  font-size: 18px;
 }
 
 

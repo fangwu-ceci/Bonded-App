@@ -9,12 +9,12 @@ h2 {
 
 .proposition {
     background-image: url(friends-bkg.png);
-    background-position: 500px 326px;
+    background-position: 500px 345px;
     font-family: 'Neucha', cursive;
     align-items: center;
     justify-content: space-between;
     background-color: rgba(248, 231, 233, 0.5);
-    padding: 276px 60px;
+    padding: 0px 60px;
     padding-top: 144px;
     margin-bottom: 20px;
     background-blend-mode: multiply;
@@ -82,6 +82,10 @@ h2 {
     p {
       font-size: 18px;
     }
+    .choose-your-bond-desc p {
+      background-color: rgba(248, 231, 233, 0.5);
+      margin: 0px;
+    }
   }
 }
 
@@ -116,4 +120,41 @@ p span {
 .about-bonded {
   font-weight: bolder;
   font-family: 'Neucha', cursive;
+}
+
+.explore-popular-groups h2 {
+  margin-top: 50px;
+}
+
+.wrapper {
+  height: 424px;
+  /*This part is important for centering*/
+  display: flex;
+  place-items: baseline;
+  margin: 50px 263px;
+}
+
+.typing-text {
+  width: 59ch;
+  animation: typing 2.2s steps(30), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: 'Neucha', cursive;
+  color: #7f0924;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
