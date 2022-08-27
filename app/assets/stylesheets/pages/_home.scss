@@ -68,7 +68,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding: 16px 60px;
+    padding: 0px 60px;
     padding-bottom: 50px;
     background-color: rgba(248, 231, 233, 0.5);
     font-family: 'Kentledge';
@@ -87,6 +87,22 @@ h2 {
       margin: 0px;
     }
   }
+}
+
+.fa-people-group {
+  color: #fe5055;
+}
+
+.fa-handshake {
+  color: #fe5055;
+}
+
+.fa-hand-holding-heart {
+  color: #fe5055;
+}
+
+.fa-hands-holding-circle {
+  color: #fe5055;
 }
 
 .bond-btn {
