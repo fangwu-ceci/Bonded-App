@@ -2,6 +2,7 @@
   <div class="card-header text-center">
     <h2 class="card-title fw-bold ">
     Want to find someone to talk to?
+    <br>
     Find a friend nearby
     </h2>
     <p class="fw-light mb-5" >
@@ -16,7 +17,7 @@
             <div class="card-user" style="background-color :white">
               <div class="card-title">
                 <img class="avatar-large" <%= image_tag user.avatar_url %> >
-              <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
+                <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
               </div>
               <div class="card-text">
                 <p class="text-md-left">Age <%= user.age %>, Based in <strong> <%= user.location %> </strong></p>
