@@ -6,11 +6,13 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+puts "deleting all users..."
+User.delete_all
+
+puts "deleting all groups..."
 Group.delete_all
 
-puts "deleting all users"
-User.delete_all
-puts "creating users"
+puts "creating users..."
 User.create!(first_name: "Bob", last_name: "Smith", nickname: "Bobby", age: 37, location: "London", email: "bobby@smith.com", password: "123456", about: "City professional who wants to find a likeminded friends. ", avatar_url: "https://www.biography.com/.image/t_share/MTgwMjk3MjI5MjU5NTE1MDMw/gettyimages-3315233.jpg")
 User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen", age: 32, location: "London", email: "jen@johnson.com", password: "123456", about: " I am passionate about empowering women and would like find other wonderwomen to change the world together", avatar_url: "https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min-480x340.jpg")
 User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", age: 29, location: "London", email: "alice@brown.com", password: "123456", about: "A single mum who wants to find other mums to go shopping and do fun things together, not just talk about changing nappies.", avatar_url: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2014/11/4-1.jpg?fit=900%2C675&ssl=1")
@@ -20,6 +22,7 @@ User.create!(first_name: "Adam", last_name: "Smith", nickname: "Adam", age: 40, 
 User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", age: 28, location: "London", email: "emma@baker.com", password: "123456", about: "Scottish living in islington. Just want to find some nice friends to enjoy this beautiful city with.", avatar_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gal_Gadot_by_Gage_Skidmore_2.jpg/1200px-Gal_Gadot_by_Gage_Skidmore_2.jpg")
 User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", age: 35, location: "London", email: "lizzy@taylor.com", password: "123456", about: "I am a passionate baker. I love baking lots of cakes in my sparetime and would love to find a friend to bake cakes with.", avatar_url: "https://d1vo8zfysxy97v.cloudfront.net/media/blog/abnormal-testosterone-levels-in-women-symptoms-risks-and-helpful-foods_fi_va9185016baf8cec6e6ec901990453bef5ea7d999.jpg")
 User.create!(first_name: "Nigel", last_name: "Jones", nickname: "Nigel", age: 35, location: "London", email: "nigel@jones.com", password: "123456", about: "Expanding my social circle, meeting like minded frineds to check out new foodie haunts and do more activities together", avatar_url:"https://cavemancircus.com/wp-content/uploads/2019/04/ana-maria-nichita-417521-unsplash-2.jpg")
+
 
 @category = ["Sport & Fitness", "Movies", "Technology", "Pets & Animals", "Music", "Art & Culture"]
 @location = ["New York", "Paris", "Tokyo,", "London", "Dublin", "Sydney"]
@@ -103,3 +106,86 @@ User.create!(first_name: "Nigel", last_name: "Jones", nickname: "Nigel", age: 35
     location: @location.sample,
     category: @category.sample
   )
+
+puts "creating groups..."
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/505273045/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/497148054/178x178.jpg?",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/505814166/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/499796502/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/505660111/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/505256914/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/499327784/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/506494672/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/502161828/178x178.jpg",   name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+Group.create!(
+  image_url: "https://secure-content.meetupstatic.com/images/classic-events/448572178/178x178.jpg",
+  name: Faker::Team.name,
+  about: "Fun and friendly group for all to join",
+  location: Faker::Address.city,
+  category: Faker::Hobby.activity
+)
+
+puts "Users and groups sucessfully created!"
+
