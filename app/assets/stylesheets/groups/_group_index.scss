@@ -1,0 +1,76 @@
+.dropdown {
+  background-color: #fe5055;
+  border-radius: 50px;
+  color: #fbecea;
+}
+
+.dropdown:hover {
+  border: 3px solid #fe5055;
+  color: #0000008c;
+}
+
+.group-container {
+  background-color: #fbecea;;
+}
+
+.group-cards-container {
+  margin-top: 32px;
+  padding-bottom: 32px;
+}
+
+.group-card {
+  display: flex;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.group-card-info {
+  padding-left: 48px;
+  font-family: 'Neucha', cursive;
+  color: #7f0924;
+  text-decoration: none;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 32px;
+  color: #7f0924;
+}
+
+.group-img-index {
+  border-radius: 8px;
+  max-height: 140px;
+}
+
+.group-name {
+  color: #7f0924;
+  text-decoration: none;
+  padding-top: 2px;
+}
+
+.group-name:hover {
+  color: #fe5055;
+}
+
+.submit {
+  color: #fe5055;
+  background-color: #fbecea;
+  box-shadow: none !important
+}
+
+.submit:hover {
+  color: #0000008c;
+  border: 3px solid #fe5055;
+}
+
+.group-text {
+  padding-top: 6px;
+}
+
+.style-divider {
+  max-width: 900px;
+}
+
+.group-text-about {
+  padding-top: 8px;
+}

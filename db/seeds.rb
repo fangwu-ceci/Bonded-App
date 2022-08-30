@@ -23,6 +23,90 @@ User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", age: 28, 
 User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", age: 35, location: "London", email: "lizzy@taylor.com", password: "123456", about: "I am a passionate baker. I love baking lots of cakes in my sparetime and would love to find a friend to bake cakes with.", avatar_url: "https://d1vo8zfysxy97v.cloudfront.net/media/blog/abnormal-testosterone-levels-in-women-symptoms-risks-and-helpful-foods_fi_va9185016baf8cec6e6ec901990453bef5ea7d999.jpg")
 User.create!(first_name: "Nigel", last_name: "Jones", nickname: "Nigel", age: 35, location: "London", email: "nigel@jones.com", password: "123456", about: "Expanding my social circle, meeting like minded frineds to check out new foodie haunts and do more activities together", avatar_url:"https://cavemancircus.com/wp-content/uploads/2019/04/ana-maria-nichita-417521-unsplash-2.jpg")
 
+
+@category = ["Sport & Fitness", "Movies", "Technology", "Pets & Animals", "Music", "Art & Culture"]
+@location = ["New York", "Paris", "Tokyo,", "London", "Dublin", "Sydney"]
+
+ Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505273045/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/497148054/178x178.jpg?",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505814166/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/499796502/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505660111/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505256914/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/499327784/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/506494672/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/502161828/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
+  Group.create!(
+    image_url: "https://secure-content.meetupstatic.com/images/classic-events/448572178/178x178.jpg",
+    name: Faker::Team.name,
+    about: "Fun and friendly group for all to join",
+    location: @location.sample,
+    category: @category.sample
+  )
+
 puts "creating groups..."
 Group.create!(
   image_url: "https://secure-content.meetupstatic.com/images/classic-events/505273045/178x178.jpg",
@@ -104,3 +188,4 @@ Group.create!(
 )
 
 puts "Users and groups sucessfully created!"
+
