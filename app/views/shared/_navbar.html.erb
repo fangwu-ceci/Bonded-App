@@ -1,10 +1,11 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/bqag2d4y5czqb0vcepxv" %>
-      <strong> BONDED </strong>
-    <% end %>
 
+    <%= link_to root_path, class:"navbar-brand" do %>
+      <%# <%= image_tag "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/bqag2d4y5czqb0vcepxv" %>
+      <%# <strong id="logo">Bonded</strong> %>
+      <%= image_tag "bonded-logo.png" %>
+    <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,6 +16,9 @@
         <% if user_signed_in? %>
           <li class="nav-item active">
             <%= link_to "Home", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "About", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Explore Groups", "#", class: "nav-link" %>
