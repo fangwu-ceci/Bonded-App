@@ -1,13 +1,25 @@
-<div class="container" >
+<div class="container">
   <div class="card-header text-center">
     <h2 class="card-title fw-bold ">
-    Want to find someone to talk to?
-    Find a friend nearby
-    </h2>
-    <p class="fw-light mb-5" >
-    "We support you through the journey of getting to know your new friends, and recommend great groups for you to join together"
-    <p>
+      Want to find someone to talk to? Find a friend nearby</h2>
+    <p class="fw-light mb-5">We support you through the journey of getting to know your new friends, and recommend great groups for you to join together
+    </p>
   </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <h2>Search for a friend</h2>
+          <%= form_tag(users_path, :method => "get", id: "search-form") do %>
+            <%= text_field_tag :location, params[:location], placeholder: "Location", class: 'form-control me-3' %>
+            <%= text_field_tag :age, params[:age], placeholder: "Age", class: 'form-control me-3' %>
+            <%#= select_tag :start_age, options_for_select(18..65), prompt: 'Select age' %>
+            <%#= select_tag :end_age, options_for_select(18..65), prompt: 'Select age' %>
+            <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Select your gender', class: 'form-control me-3' %>
+            <%= submit_tag "Search", class: 'btn btn-info' %>
+          <% end %>
+          <%# can't filter by male (only female) because ILIKE used i%>
+
   <div class="row g-3 cards-bonded">
     <% @users.each do |user| %>
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -19,7 +31,9 @@
               <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
               </div>
               <div class="card-text">
-                <p class="text-md-left">Age <%= user.age %>, Based in <strong> <%= user.location %> </strong></p>
+                <p class="text-md-left"><strong>Age:</strong> <%= user.age %></p>
+                <p class="text-md-left"><strong>Gender:</strong> <%= user.gender %></p>
+                <p class="text-md-left"><strong>Location:</strong> <%= user.location %></p>
               </div>
               <div class="card-text">
                 <p class="text-md-left"> <%= user.about %></p>
