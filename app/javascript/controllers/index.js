@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import ChatroomSubscriptionController from "./chatroom_subscription_controller"
+application.register("chatroom-subscription", ChatroomSubscriptionController)
+
 import FooterController from "./footer_controller"
 application.register("footer", FooterController)
 
@@ -12,6 +15,3 @@ application.register("hello", HelloController)
 
 import NavbarController from "./navbar_controller"
 application.register("navbar", NavbarController)
-
-import FooterController from "./footer_controller"
-application.register("footer", FooterController)
