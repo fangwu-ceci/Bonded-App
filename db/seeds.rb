@@ -28,6 +28,7 @@ User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", ge
 User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "male", age: 35, location: uk_cities.sample, email: "oliver@jones.com", password: "123456", about: "Expanding my social circle, meeting like minded frineds to check out new foodie haunts and do more activities together", avatar_url:"https://cavemancircus.com/wp-content/uploads/2019/04/ana-maria-nichita-417521-unsplash-2.jpg")
 @location = ["New York", "Paris", "Tokyo", "London", "Dublin", "Sydney"]
 
+puts "creating groups..."
  Group.create!(
     image_url: "https://images.pexels.com/photos/7632045/pexels-photo-7632045.jpeg",
     name: "South Mountain Trail run",
