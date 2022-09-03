@@ -23,6 +23,7 @@ puts "deleting all groups..."
 Group.delete_all
 
 puts "creating users..."
+
 user1 = User.create!(first_name: "Bob", last_name: "Smith", nickname: "Bobby", gender: "male", age: 37, location: uk_cities.sample, email: "bobby@smith.com", password: "123456", about: "City professional who wants to find a likeminded friends. ", avatar_url: "https://www.biography.com/.image/t_share/MTgwMjk3MjI5MjU5NTE1MDMw/gettyimages-3315233.jpg")
 user2 = User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen", gender: "female", age: 32, location: uk_cities.sample, email: "jen@johnson.com", password: "123456", about: " I am passionate about empowering women and would like find other wonderwomen to change the world together", avatar_url: "https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min-480x340.jpg")
 user3 = User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", gender: "female", age: 29, location: uk_cities.sample, email: "alice@brown.com", password: "123456", about: "A single mum who wants to find other mums to go shopping and do fun things together, not just talk about changing nappies.", avatar_url: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2014/11/4-1.jpg?fit=900%2C675&ssl=1")
@@ -32,6 +33,8 @@ user6 = User.create!(first_name: "Adam", last_name: "Smith", nickname: "Adam", g
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "female", age: 28, location: uk_cities.sample, email: "emma@baker.com", password: "123456", about: "Scottish living in islington. Just want to find some nice friends to enjoy this beautiful city with.", avatar_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gal_Gadot_by_Gage_Skidmore_2.jpg/1200px-Gal_Gadot_by_Gage_Skidmore_2.jpg")
 user8 = User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", gender: "female", age: 35, location: uk_cities.sample, email: "lizzy@taylor.com", password: "123456", about: "I am a passionate baker. I love baking lots of cakes in my sparetime and would love to find a friend to bake cakes with.", avatar_url: "https://d1vo8zfysxy97v.cloudfront.net/media/blog/abnormal-testosterone-levels-in-women-symptoms-risks-and-helpful-foods_fi_va9185016baf8cec6e6ec901990453bef5ea7d999.jpg")
 user9 = User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "male", age: 35, location: uk_cities.sample, email: "oliver@jones.com", password: "123456", about: "Expanding my social circle, meeting like minded frineds to check out new foodie haunts and do more activities together", avatar_url:"https://cavemancircus.com/wp-content/uploads/2019/04/ana-maria-nichita-417521-unsplash-2.jpg")
+
+@location = ["New York", "Paris", "Tokyo", "London", "Dublin", "Sydney"]
 
 group1 = Group.create!(
   image_url: "https://images.pexels.com/photos/7632045/pexels-photo-7632045.jpeg",

@@ -1,1 +1,35 @@
-<h1>Show page</h1>
+<div class="container">
+  <div class="content">
+    <div class="user-profile">
+      <div class="card">
+        <img src="<%= @user.avatar_url %>" alt="John">
+        <h3 id="first-name"><%= @user.first_name %> <%= @user.last_name %></h3>
+        <div class="user-info">
+          <p><%= @user.gender %></p>
+          <p><%= @user.age %></p>
+          <p><%= @user.location %></p>
+        </div>
+        <div class="user-bio">
+          <p><%= @user.about %></p>
+        </div>
+        <button class="chat-btn">Chat</button>
+        <div class="user-socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <div class="user-other">
+      <div>
+        <h2>Map</h2>
+      </div>
+      <div>
+        <h2>Groups</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# position image top of card div %>
+<%# need to stop image overflowing when long bio added %>
