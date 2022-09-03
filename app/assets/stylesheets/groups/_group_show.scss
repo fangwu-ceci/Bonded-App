@@ -35,3 +35,46 @@
   margin-top: 16px;
   max-width: 1032px;
 }
+
+h2  {
+  margin:0;
+  padding: 10px;
+}
+
+p {
+  display:flex;
+}
+
+.flex-item {
+  display:flex;
+}
+
+.discussion-card {
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.discussion-card-title {
+  display: flex;
+}
+
+.card-title-item {
+  margin-left:10px;
+  margin-top: 5px;
+}
+
+.discussion-card-content {
+  margin-left: 10px;
+  text-align: left;
+  padding: 5px;
+}
+
+.nice-class {
+  padding: 10px;
+  margin: auto;
+}
+
+.form-card {
+  padding: 5px;
+}
