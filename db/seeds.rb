@@ -26,85 +26,105 @@ User.create!(first_name: "Adam", last_name: "Smith", nickname: "Adam", gender: "
 User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "female", age: 28, location: uk_cities.sample, email: "emma@baker.com", password: "123456", about: "Scottish living in islington. Just want to find some nice friends to enjoy this beautiful city with.", avatar_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gal_Gadot_by_Gage_Skidmore_2.jpg/1200px-Gal_Gadot_by_Gage_Skidmore_2.jpg")
 User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", gender: "female", age: 35, location: uk_cities.sample, email: "lizzy@taylor.com", password: "123456", about: "I am a passionate baker. I love baking lots of cakes in my sparetime and would love to find a friend to bake cakes with.", avatar_url: "https://d1vo8zfysxy97v.cloudfront.net/media/blog/abnormal-testosterone-levels-in-women-symptoms-risks-and-helpful-foods_fi_va9185016baf8cec6e6ec901990453bef5ea7d999.jpg")
 User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "male", age: 35, location: uk_cities.sample, email: "oliver@jones.com", password: "123456", about: "Expanding my social circle, meeting like minded frineds to check out new foodie haunts and do more activities together", avatar_url:"https://cavemancircus.com/wp-content/uploads/2019/04/ana-maria-nichita-417521-unsplash-2.jpg")
+@location = ["New York", "Paris", "Tokyo", "London", "Dublin", "Sydney"]
 
  Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505273045/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/7632045/pexels-photo-7632045.jpeg",
+    name: "South Mountain Trail run",
+    about: "Join us this Sunday and kick start your fitness with an energizing, fun group run! Whether you're a beginner, or a regular runner, runners
+    and joggers of all skill levels are welcome. We're always excited to meet new people and we always run together as a group!",
     location: @location.sample,
-    category: @category.sample
+    category: "Sport & Fitness"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/497148054/178x178.jpg?",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/3810788/pexels-photo-3810788.jpeg",
+    name: "Creative Projects Work group",
+    about: "This group is open to anyone who identifies as a healer, a creative or solopreneur. Whether this is your main business or a side hustle.
+    This is not about promoting what you do: no elevator pitches here! It's about creating an inspiring space where we all work on a project we are trying
+    to bring to fruition",
     location: @location.sample,
-    category: @category.sample
+    category: "Art & Culture"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505814166/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/7991119/pexels-photo-7991119.jpeg",
+    name: "Movies for All",
+    about: "This Group is a unique collective made up of directors, producers, cinematographers, screen writers, sound designers, photographers,
+    composers, actors, and students that collaborate on a wide range of creative filmmaking projects. Members range the gamut from well known professionals,
+    to students, to those just interested in learning and being a part of a creative community.",
     location: @location.sample,
-    category: @category.sample
+    category: "Films"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/499796502/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg",
+    name: "Love Tech!",
+    about: "Are you involved in a startup developing, or working with immersive technology? Are you an artist, engineer, or producer
+    creating content for XR, VR, AR, or any type of interactive tech? Are you involved in film, theater, or the arts and want to learn about how immersive
+    tech might change your world? If so, this is the meetup for you!",
     location: @location.sample,
-    category: @category.sample
+    category: "Technology"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505660111/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/7991661/pexels-photo-7991661.jpeg",
+    name: "Smiths Martial Arts Club",
+    about: "The purpose of this group is to foster a safe and engaging learning environment for Martial Artist regardless of skill level. This group will
+    help new students to learn and grow as Martial Artists while developing new skills and confidences. The purpose of this group is to foster a safe and
+    engaging learning environment for Martial Artist regardless of skill level. This group will help new students to learn and grow as Martial Artists
+    while developing new skills and confidences.",
     location: @location.sample,
-    category: @category.sample
+    category: "Sport & Fitness"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/505256914/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/13291883/pexels-photo-13291883.jpeg",
+    name: "People with Pets",
+    about: "If you are a member of a pet club, then we know you love your furry friends. Our beloved pets come in all shapes and sizes - all breeds.
+    We welcome them into our family and they become part of our daily lives. By joining our pets and animals group, you can associate with other pet lovers,
+    learn about different types of animals or assist with volunteering or rescues in your local area.",
     location: @location.sample,
-    category: @category.sample
+    category: "Pets & Animals"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/499327784/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/6173926/pexels-photo-6173926.jpeg",
+    name: "Tara's Bluegrass Jam",
+    about: "If you are looking for some great music, to expand your music horizons, at an affordable price in a great venue, this is a group you should join!
+    The concerts run $10-$15 and refreshments are served afterwards for a chance to mingle.",
     location: @location.sample,
-    category: @category.sample
+    category: "Music"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/506494672/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/6896221/pexels-photo-6896221.jpeg",
+    name: "Arts at Night",
+    about: "This is a group for people interested in the arts. We offer a variety of cultural experiences, some of which involve
+    attending public events as a group including a series of art gallery tours in various neighborhoods, with exclusive talks by gallery owners
+    and staff, and sometimes the artists themselves; Classical music concerts and lectures, including chamber and piano recitals at discount prices",
     location: @location.sample,
-    category: @category.sample
+    category: "Art & Culture"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/502161828/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/262524/pexels-photo-262524.jpeg",
+    name: "Intermediete Co-Ed Football",
+    about: "Intermediate co-ed football club group. We play for fun, games are competitive but not aggressive. Be respectful to other
+    players, we're here to have a good time after a long week of work. Level is for beginner (with prior experience) / intermediate players.
+    We will be posting other events such as tournaments or social gatherings. See you on the pitch!",
     location: @location.sample,
-    category: @category.sample
+    category: "Sport & Fitness"
   )
 
   Group.create!(
-    image_url: "https://secure-content.meetupstatic.com/images/classic-events/448572178/178x178.jpg",
-    name: Faker::Team.name,
-    about: "Fun and friendly group for all to join",
+    image_url: "https://images.pexels.com/photos/4114950/pexels-photo-4114950.jpeg",
+    name: "Elian Delage Guitar Ensemble",
+    about: "This group brings people together through guitar playing. Whether you're taking one of our workshops or participating in ensembles,
+    jams or our open mic you'll get a chance to meet great people, have a great experience and expand your guitar skills in the process. Ukulele players,
+    bassists and singers are also welcome.Fun and friendly group for all to join",
     location: @location.sample,
-    category: @category.sample
+    category: "Music"
   )
 
 puts "creating groups..."

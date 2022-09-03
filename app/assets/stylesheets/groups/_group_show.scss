@@ -1,36 +1,37 @@
-.text-beside-pic-1{
-  margin-top: 240px;
-  font-family: 'Neucha', cursive;
-  color: #7f0924;
+.group-show-btn-content {
+  margin-left: 32px;
+  margin-top: 12px;
+  max-width: 121px;
+  min-width: 121px;
+  background-color: #fe5055;
+  border-radius: 5px;
+  color: #fbecea;
 }
 
-.text-beside-pic-2{
-  padding-top: 24px;
-  padding-left: 32px;
-  font-family: 'Neucha', cursive;
-  color: #7f0924;
+.group-show-btn:hover {
+  border: 3px solid #fe5055;
+  color: #0000008c;
 }
 
-.text-under-pic {
-  padding-right: 80px;
-  font-family: 'Neucha', cursive;
-  color: #7f0924;
-  margin-bottom: 32px;
+.group-show-content {
+  margin-top: 120px;
+  margin-left: 64px;
 }
-
 .group-img-show {
-  margin-top: 240px;
-  max-height: 320px;
-  max-width: 480px;
-  border-radius: 10px;
-  margin-bottom: 32px;
+  max-width: 340px;
+  min-width: 340px;
+  max-height: 280px;
+  min-height: 280px;
+  border-radius: 12px;
+  margin-left: 48px;
 }
 
-.group-show-info {
-  font-family: 'Neucha', cursive;
-  color: #7f0924;
+.group-show-img-content {
+  margin-top: 40px;
 }
 
-.style-divider {
-  max-width: 900px;
+.style-divider-2 {
+  color: #0000008c;
+  margin-top: 16px;
+  max-width: 1032px;
 }
