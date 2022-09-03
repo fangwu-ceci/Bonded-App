@@ -12,7 +12,7 @@ class User < ApplicationRecord
   has_many :usergroups
 
   def self.search(location, age, gender)
-    where("location ILIKE ? and age ILIKE ? and gender ILIKE ?", "%#{location}%", "%#{age}%", "%#{gender}%")
+    where("location ILIKE ? and age ILIKE ? and gender LIKE ?", "%#{location}%", "%#{age}%", "%#{gender}%")
     # where("location ILIKE ? AND age ? AND gender ?", "%#{location}%", "#{age}", "#{gender}")
   end
 end
