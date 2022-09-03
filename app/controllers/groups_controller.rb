@@ -1,10 +1,6 @@
 class GroupsController < ApplicationController
   def index
-    if params[:query].present?
-      @groups = Group.where("category ILIKE ?", "%#{params[:query]}%")
-    else
-      @groups = Group.all
-    end
+    @groups = Group.all
   end
 
   def show
