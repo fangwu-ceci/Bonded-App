@@ -2,27 +2,15 @@
   <div class="heading">
     <h1><strong>There are <%= @groups.count %> groups near you</strong></h1>
   </div>
-  <select class="dropdown btn" name="location" id="location">
-    <option disabled selected value="location">Location</option>
-    <option value="new-york">New York</option>
-    <option value="paris">Paris</option>
-    <option value="tokyo">Tokyo</option>
-    <option value="london">London</option>
-    <option value="dublin">Dublin</option>
-    <option value="sydney">Sydney</option>
-    <option value="Any-location">Any location</option>
-  </select>
-  <select class="dropdown btn" name="category" id="category">
-    <option disabled selected value="category">Category</option>
-    <option value="sport-fitness">Sport & Fitness</option>
-    <option value="movies">Films</option>
-    <option value="technology">Technology</option>
-    <option value="pets-animals">Pets & Animals</option>
-    <option value="music">Music</option>
-    <option value="art-culture">Art & Culture</option>
-    <option value="any-category">Any category</option>
-  </select>
-  <%= submit_tag "Search", class: "submit btn" %><hr class="style-divider">
+
+  <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
+    <%= select_tag :location, options_for_select(["New York", "Paris", "Tokyo", "London", "Dublin", "Sydney", ],
+        params[:location]), prompt: 'Any Location', class: 'dropdown btn' %>
+    <%= select_tag :category, options_for_select(["Sport & Fitness", "Films", "Technology", "Pets & Animals", "Music", "Art & Culture", ],
+        params[:category]), prompt: 'Any Category', class: 'dropdown btn' %>
+    <%= submit_tag "Search", class: "submit btn" %><hr class="style-divider">
+  <% end %>
+
   <div class="group-cards-container">
   <% @groups.each do |group| %>
     <div class="group-card">
