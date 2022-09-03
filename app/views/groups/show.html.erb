@@ -25,6 +25,15 @@
 
     <div class="col-12 col-sm-8 text-center border">
       <h2>Discussion</h2>
+      <% @group.posts.each do |post| %>
+        <%= post.user.nickname %>
+        <%= post.content %>
+      <% end %>
+      <%= simple_form_for([@group, @post]) do |f| %>
+        <%= f.input :title %>
+        <%= f.input :content %>
+        <%= f.button :submit %>
+      <% end %>
     </div>
 
     <div class="col-12 col-sm-2 border">
