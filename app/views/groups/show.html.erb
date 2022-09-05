@@ -35,8 +35,8 @@
 
     <div class="col-12 col-sm-2 border">
     <h3>Members</h3>
-      <% @group.user_groups.map do |user_group| %>
-        <%= user_group.user.nickname %>
+      <%@group.user_groups.map do |user_group| %>
+        <%= image_tag user_group.user.avatar_url, class: "group-show-avatar" %>
       <% end %>
     </div>
 
