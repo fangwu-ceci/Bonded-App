@@ -18,27 +18,39 @@
 
   <hr class="style-divider-2">
 
-  <div class="row">
-
-    <div class="col-12 col-sm-10 text-center border">
-      <h2>Discussion</h2>
+<div class="row">
+  <div class="col-12 col-sm-10 text-center border-none">
+    <h2>Discussion (<%= Post.count %>) </h2>
+    <div class="discussion-card">
       <% @group.posts.each do |post| %>
-        <%= post.user.nickname %>
-        <%= post.content %>
+      <div class="discussion-card-title">
+        <div class="card-title-item ">
+          <%= image_tag post.user.avatar_url, class:"avatar" %>
+        </div>
+        <div class="card-title-item">
+          <p class="text-xl-left fw-bold"> <%= post.user.nickname %> </p>
+        </div>
+        <div class="card-title-item">
+          <p class="text-xl-left"> <%= post.created_at %></p>
+        </div>
+      </div>
+        <div class="discussion-card-content">
+           <p class="text-md-left"> <%= post.content %></p>
+        </div>
       <% end %>
-      <%= simple_form_for([@group, @post]) do |f| %>
-        <%= f.input :title %>
-        <%= f.input :content %>
-        <%= f.button :submit %>
-      <% end %>
+      <div class="form-card">
+      <h4>Post Your Comments</h4>
+        <%= simple_form_for([@group, @post]) do |f| %>
+          <%= f.input :content, label: false, wrapper_html: { class: "nice-class" }%>
+          <%= f.button :submit %>
+        <% end %>
+      </div>
     </div>
-
     <div class="col-12 col-sm-2 border">
     <h3>Members</h3>
       <%@group.user_groups.map do |user_group| %>
         <%= image_tag user_group.user.avatar_url, class: "group-show-avatar" %>
       <% end %>
     </div>
-
   </div>
 </div>

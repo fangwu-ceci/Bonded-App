@@ -1,0 +1,5 @@
+<h1>New post</h1>
+<%= simple_form_for [@group, @post] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>
