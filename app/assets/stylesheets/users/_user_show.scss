@@ -11,17 +11,18 @@
 }
 
 .user-profile {
-  padding-top: 10px;
+  padding: 10px;
 }
 
-.card {
+.user-profile-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   // max-width: 300px;
   width: 370px;
   // height: 600px;
   margin: auto;
-  padding: 20px 20px;
+  padding: 20px;
   text-align: center;
+  border-radius: 8px;
   img {
     width:80%;
     // width: 200px;
@@ -76,6 +77,8 @@ p {
   height: 100%;
 }
 
+.user-profile-container {
+  background-color:#fbecea;
+}
 
-// Notes:
 // profile picture - how to adjust properly for every picture?

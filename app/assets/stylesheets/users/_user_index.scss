@@ -6,7 +6,7 @@ h2 {
   line-height: 30px;
 }
 
-.card{
+.user-index-cards{
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -14,10 +14,11 @@ h2 {
   padding: 50px;
   border-radius: 20px;
   border: white;
+  background: white;
   max-width: 640px;
   margin: 0 auto;
 }
-.card-user {
+.user-index-indiv-cards {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -27,7 +28,7 @@ h2 {
   transition: border 1s;
 }
 
-.icons {
+.user-index-card-icons {
   width: 130px;
   display: flex;
   flex-direction: row;
@@ -36,29 +37,29 @@ h2 {
   padding: 20px;
 }
 
-.card-user .p {
+.user-index-indiv-card .p {
   font-family: "Kentledge","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
 
-.card-user .h2 {
+.user-index-indiv-card .h2 {
   font-family: "Kentledge","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
 }
 
-.card-user a {
+.user-index-indiv-card a {
   text-decoration: none;
   color:burlywood;
 }
 
-.cards-bonded {
+.user-index-cards-body-wrapper {
   width: 100%;
   justify-content: center;
 }
 
-body {
+.user-index-container {
   background-color:#fbecea;
 }

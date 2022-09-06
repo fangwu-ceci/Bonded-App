@@ -6,6 +6,6 @@ Rails.application.routes.draw do
     resources :messages, only: :create
   end
   resources :groups, only: [:index, :show, :destroy,] do
-    resources :posts, only: [:create, :update]
+    resources :posts, only: [:create]
   end
 end
