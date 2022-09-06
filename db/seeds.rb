@@ -10,11 +10,10 @@ uk_cities = ["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Cante
 @category = ["Sport & Fitness", "Movies", "Technology", "Pets & Animals", "Music", "Art & Culture"]
 @location = ["New York", "Paris", "Tokyo,", "London", "Dublin", "Sydney"]
 
+Post.delete_all
+
 puts "deleting all user groups..."
 UserGroup.delete_all
-
-puts "deleting all posts..."
-Post.delete_all
 
 puts "deleting all users..."
 User.delete_all
@@ -185,4 +184,4 @@ UserGroup.create!(user_id: user6.id, group_id: group10.id)
 UserGroup.create!(user_id: user3.id, group_id: group10.id)
 UserGroup.create!(user_id: user2.id, group_id: group10.id)
 
-puts "Users and groups sucessfully created!"
+puts "Users, groups and user groups sucessfully created!"

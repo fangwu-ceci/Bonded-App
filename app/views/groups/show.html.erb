@@ -3,7 +3,7 @@
     <div class="col-12 col-sm-2 .group-show-btn">
       <%= link_to "Back to groups", groups_path, class: "btn group-show-btn-content btn-sm btn-block" %>
       <a href="" class="btn group-show-btn-content btn-sm btn-block">Join this group</a>
-      <a href="" class="btn group-show-btn-content btn-sm btn-block">Events group</a>
+      <%# <a href="" class="btn group-show-btn-content btn-sm btn-block">Events group</a> %>
     </div>
 
     <img class="col-12 col-sm-4" src=<%= @group.image_url %> alt="">
@@ -48,6 +48,7 @@
     </div>
     <div class="col-12 col-sm-2 border">
     <h3>Members</h3>
+    <%# <h3><strong>There are <%= user_id.count %><%# members in this group</strong></h3> %> <%# %> %>
       <%@group.user_groups.map do |user_group| %>
         <%= image_tag user_group.user.avatar_url, class: "group-show-avatar" %>
       <% end %>
