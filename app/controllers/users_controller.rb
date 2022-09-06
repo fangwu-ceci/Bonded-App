@@ -18,6 +18,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @chatroom_data = Chatroom.where(chatroom_requester_id: @user.id,  chatroom_receiver_id: current_user).first.present? ?
+        Chatroom.where(chatroom_requester_id: @user.id, chatroom_receiver_id: current_user).first :
+        Chatroom.where(chatroom_requester_id: current_user, chatroom_receiver_id: @user.id).first
   end
 end
 

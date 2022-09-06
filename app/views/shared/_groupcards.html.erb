@@ -1,0 +1,15 @@
+<div class="explore-group-cards-container ">
+  <% @groups.each do |group| %>
+    <div class="group-card col-sm-12 col-md-6 col-lg-4 col-xl-4">
+      <%= link_to group_path(group), class: "text-decoration-none text-dark" do %>
+        <div class="card-image"> <img class="group-img-index" src=<%= group.image_url %> alt=""></div>
+          <div class="group-card-info">
+            <div class="card-text fw-bold"><span class="text-secondary"> Groups in <%= group.location %></span></div>
+              <div><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></div>
+              <div class="group-text text-truncate"><%= group.about %></div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

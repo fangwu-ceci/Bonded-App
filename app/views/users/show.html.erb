@@ -1,7 +1,7 @@
-<div class="container">
+<div class="user-profile-container container">
   <div class="content">
     <div class="user-profile">
-      <div class="card">
+      <div class="user-profile-card">
         <img src="<%= @user.avatar_url %>" alt="John">
         <h3 id="first-name"><%= @user.first_name %> <%= @user.last_name %></h3>
         <div class="user-info">
@@ -12,11 +12,16 @@
         <div class="user-bio">
           <p><%= @user.about %></p>
         </div>
-        <button class="chat-btn">Chat</button>
+        <% if @user.id != current_user.id %>
+          <%= button_to "Chat", chatroom_path(@chatroom_data), :method => "get", class: "chat-btn" %>
+        <% end %>
         <div class="user-socials">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+          <%= button_to "Back to all users", users_path, :method => "get", class: "btn m-10" %>
         </div>
       </div>
     </div>

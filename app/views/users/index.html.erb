@@ -1,6 +1,6 @@
-<div class="container">
-  <div class="card-header text-center">
-    <h2 class="card-title fw-bold ">
+<div class="user-index-container container">
+  <div class="user-index-card-header text-center">
+    <h2 >
     Want to find someone to talk to?
     <br>
     Find a friend nearby
@@ -9,41 +9,39 @@
     "We support you through the journey of getting to know your new friends, and recommend great groups for you to join together"
     <p>
   </div>
-  <div class="row justify-content-center">
+  <div class="user-index-cards-body-wrapper row justify-content-center">
     <div class="col-sm-8">
       <h2>Search for a friend</h2>
       <%= form_tag(users_path, :method => "get", id: "search-form") do %>
-        <%= text_field_tag :location, params[:location], placeholder: "Location", class: 'form-control me-3' %>
-        <%#= text_field_tag :age, params[:age], placeholder: "Age", class: 'form-control me-3' %>
-        <%#= range_field_tag :age, in: 1...10, step: 1 %>
-        <%#= select_tag :age, options_for_select(["37", "31-42", "43-53"], params[:age_range]), prompt: 'Select your age range', class: 'form-control me-3' %>
-        <%= select_tag :min_age, options_for_select(18..65), prompt: 'Select age' %>
-        <%= select_tag :max_age, options_for_select(18..65), prompt: 'Select age' %>
-        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Select your gender', class: 'form-control me-3' %>
+        <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
+        params[:location]), prompt: 'Location', class: 'dropdown btn' %>
+        <%= select_tag :min_age, options_for_select(18..65), prompt: 'Min age', class: 'dropdown btn' %>
+        <%= select_tag :max_age, options_for_select(18..65), prompt: 'Max age', class: 'dropdown btn' %>
+        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Preferred gender', class: 'dropdown btn' %>
         <%= submit_tag "Search", class: 'btn btn-info' %>
       <% end %>
     </div>
-    <div class="row g-3 cards-bonded">
+    <div class="user-index-card row g-3">
       <% @users.each do |user| %>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <%= link_to user_path(user), class: "text-decoration-none text-dark" do %>
-            <div class="card">
-              <div class="card-user" style="background-color :white">
-                <div class="card-title">
+            <div class="user-index-cards ">
+              <div class="user-index-indiv-card" style="background-color :white">
+                <div class="user-index-indiv-card-title">
                   <%= image_tag user.avatar_url, class:"avatar-large" %>
                   <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
                 </div>
-                <div class="card-text">
+                <div class="user-index-indiv-card-text">
                   <p class="text-md-left"><strong>Age:</strong> <%= user.age %></p>
                   <p class="text-md-left"><strong>Gender:</strong> <%= user.gender %></p>
                   <p class="text-md-left"><strong>Location:</strong> <%= user.location %></p>
                 </div>
-                <div class="card-text">
+                <div class="user-index-indiv-card-text">
                   <p class="text-md-left"> <%= user.about %></p>
                 </div>
-                <a href="#" class="btn"> <strong>View Profile</strong></a>
+                 <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
               </div>
-              <div class="icons">
+              <div class="user-index-card-icons">
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook"></i>
