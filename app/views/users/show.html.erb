@@ -12,11 +12,14 @@
         <div class="user-bio">
           <p><%= @user.about %></p>
         </div>
-        <button class="chat-btn">Chat</button>
+        <%= button_to "Chat", chatroom_path, :method => "get", class: "chat-btn" %>
         <div class="user-socials">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+          <%= button_to "Back to all users", users_path, :method => "get", class: "btn m-10" %>
         </div>
       </div>
     </div>

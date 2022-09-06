@@ -35,13 +35,13 @@
   <h2 id="action-heading" style="text-align: center"><strong>Choose your bond</strong></h2>
   <div class="options">
     <div>
-      <button class="bond-btn button-neon">Meet a friend</button>
+    <%= button_to "Meet a friend", users_path, :method => "get", class: "bond-btn button-neon" %>
       <p class="btn-desc">
         <span>Discover and chat with new people nearby</span><span>who share similar interests.</span>
       </p>
     </div>
     <div>
-      <button class="bond-btn button-neon">Join a group</button>
+      <%= button_to "Join a group", groups_path, :method => "get", class: "bond-btn button-neon" %>
       <p class="btn-desc">
         <span>Join groups and find communities</span><span>with common interests.</span>
       </p>
@@ -50,6 +50,7 @@
   <div class="container">
     <div class="explore-popular-groups">
       <h2><strong>Explore popular groups</strong></h2>
+
     </div>
   </div>
 </div>
