@@ -9,6 +9,8 @@
 uk_cities = ["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading"];
 age = (28..45).to_a
 
+Post.delete_all
+
 puts "deleting all user groups..."
 UserGroup.destroy_all
 
@@ -47,6 +49,7 @@ Chatroom.create!(name: "Adam", chatroom_requester_id: 1, chatroom_receiver_id: 6
 Chatroom.create!(name: "Emma", chatroom_requester_id: 1, chatroom_receiver_id: 7)
 Chatroom.create!(name: "Lizzy", chatroom_requester_id: 1, chatroom_receiver_id: 8)
 Chatroom.create!(name: "Ollie", chatroom_requester_id: 1, chatroom_receiver_id: 9)
+
 
 group1 = Group.create!(
   image_url: "https://images.pexels.com/photos/7632045/pexels-photo-7632045.jpeg",
@@ -197,4 +200,4 @@ UserGroup.create!(user_id: user6.id, group_id: group10.id)
 UserGroup.create!(user_id: user3.id, group_id: group10.id)
 UserGroup.create!(user_id: user2.id, group_id: group10.id)
 
-puts "Users and groups sucessfully created!"
+puts "Users, groups and user groups sucessfully created!"
