@@ -45,16 +45,10 @@
           <% end %>
         </div>
       </div>
-      <div class="col-12 col-sm-2 border">
-      <h3>Members</h3>
-        <% @group.user_groups.map do |user_group| %>
-          <%= user_group.user.nickname %>
-        <% end %>
-      </div>
     </div>
     <div class="col-12 col-sm-2 border">
     <h3>Members</h3>
-    <%# <h3><strong>There are <%= user_id.count %><%# members in this group</strong></h3> %> <%# %> %>
+    <%# <h3><strong>There are <%= user_id.count %><%# members in this group</strong></h3> %> <%# %>
       <%@group.user_groups.map do |user_group| %>
         <%= image_tag user_group.user.avatar_url, class: "group-show-avatar" %>
       <% end %>
