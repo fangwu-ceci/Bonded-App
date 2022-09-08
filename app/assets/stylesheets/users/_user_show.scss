@@ -12,25 +12,25 @@
 
 .user-profile {
   padding-top: 10px;
-}
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  // max-width: 300px;
-  width: 370px;
-  // height: 600px;
-  margin: auto;
-  padding: 20px 20px;
-  text-align: center;
-  img {
-    width:80%;
-    // width: 200px;
-    /* height: 300px; */
-    object-fit: cover;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    // max-width: 300px;
+    width: 370px;
+    // height: 600px;
+    margin: auto;
+    padding: 20px 20px;
+    text-align: center;
+    img {
+      width: 100%;
+      // width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
   }
 }
 
@@ -49,9 +49,10 @@ p {
 }
 
 .chat-btn {
-  margin: 0px 100px;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 25px 80px;
+  // margin: 0px 100px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   padding: 9px 16px;
   font-size: 20px;
   border-radius: 100px;
@@ -76,6 +77,19 @@ p {
   height: 100%;
 }
 
+.user-show-map {
+  margin: 31px 100px;
+  border-radius: 20px;
+}
+
+.h2-groups {
+  margin: 0px 100px;
+  padding: 30px 10px;
+}
+
+.user-show-about {
+  font-size: 14px;
+}
 
 // Notes:
 // profile picture - how to adjust properly for every picture?

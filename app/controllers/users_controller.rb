@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: %i[ show edit update destroy ]
   def index
     location = params[:location]
     min_age = params[:min_age]
@@ -18,8 +19,20 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @markers = [
+      {
+        lat: @user.latitude,
+        lng: @user.longitude
+      }
+    ]
   end
 end
+
+private
+
+    def set_user
+      @user = User.find(params[:id])
+    end
 
 # Solution 1:
 # if params[:min_age].present?
