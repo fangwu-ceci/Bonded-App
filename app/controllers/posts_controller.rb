@@ -11,14 +11,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def update
-    if @post.update(post_params)
-      redirect_to group_path(@group)
-    else
-      render :new, status: :unprocessable_entity
-    end
-  end
-
   private
 
   def post_params

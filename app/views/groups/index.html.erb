@@ -4,10 +4,10 @@
   </div>
 
   <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
-    <%= select_tag :location, options_for_select(["New York", "Paris", "Tokyo", "London", "Dublin", "Sydney", ],
-        params[:location]), prompt: 'Any Location', class: 'dropdown btn' %>
+    <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
+        params[:location]), prompt: 'Preferred Location', class: 'dropdown btn' %>
     <%= select_tag :category, options_for_select(["Sport & Fitness", "Films", "Technology", "Pets & Animals", "Music", "Art & Culture", ],
-        params[:category]), prompt: 'Any Category', class: 'dropdown btn' %>
+        params[:category]), prompt: 'Preferred Category', class: 'dropdown btn' %>
     <%= submit_tag "Search", class: "submit btn" %><hr class="style-divider">
   <% end %>
 
