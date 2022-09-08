@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: %i[ show edit update destroy ]
   def index
     location = params[:location]
     min_age = params[:min_age]
@@ -18,11 +19,23 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @markers = [
+      {
+        lat: @user.latitude,
+        lng: @user.longitude
+      }
+    ]
     @chatroom_data = Chatroom.where(chatroom_requester_id: @user.id,  chatroom_receiver_id: current_user).first.present? ?
         Chatroom.where(chatroom_requester_id: @user.id, chatroom_receiver_id: current_user).first :
         Chatroom.where(chatroom_requester_id: current_user, chatroom_receiver_id: @user.id).first
   end
 end
+
+private
+
+    def set_user
+      @user = User.find(params[:id])
+    end
 
 # Solution 1:
 # if params[:min_age].present?

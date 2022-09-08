@@ -10,7 +10,8 @@
           <p><%= @user.location %></p>
         </div>
         <div class="user-bio">
-          <p><%= @user.about %></p>
+          <p class="user-show-about"><%= @user.about %></p>
+          <%# <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eum quae dignissimos repellat eius repudiandae minima consectetur dolor natus reiciendis alias doloremque ex saepe ipsa dolores, animi labore laboriosam voluptatum.</p> %>
         </div>
         <% if @user.id != current_user.id %>
           <%= button_to "Chat", chatroom_path(@chatroom_data), :method => "get", class: "chat-btn" %>
@@ -25,12 +26,16 @@
         </div>
       </div>
     </div>
-    <div class="user-other">
+    <div class="user-other" style="width: 100%; height: 300px;">
       <div>
-        <h2>Map</h2>
+        <%# <h2>Map</h2> %>
+      <div class= "user-show-map" style="width: 100%; height: 300px;"
+       data-controller="map"
+       data-map-markers-value="<%= @markers.to_json %>"
+       data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
       </div>
       <div>
-        <h2>Groups</h2>
+        <h2 class="h2-groups">Groups</h2>
       </div>
     </div>
   </div>
