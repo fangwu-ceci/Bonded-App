@@ -50,7 +50,22 @@
   <div class="container">
     <div class="explore-popular-groups">
       <h2><strong>Explore popular groups</strong></h2>
-        <%= render 'shared/groupcards', groups: @groups %>
+      <div class="group-cards-flexbox">
+        <% @groups.each do |group| %>
+          <div>
+            <%= link_to group_path(group), class: "text-decoration-none text-dark" do %>
+              <div>
+                <img class="group-img-index-home" src=<%= group.image_url %> alt="">
+                <div class="group-card-info-home">
+                  <div><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></div>
+                  <div class="card-text fw-bold"><span class="text-secondary"><%= group.location %></span></div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+        <%#= render 'shared/groupcards', groups: @groups %>
     </div>
   </div>
 </div>
