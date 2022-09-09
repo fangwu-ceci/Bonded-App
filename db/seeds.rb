@@ -53,7 +53,7 @@ Chatroom.create!(name: "Ollie", chatroom_requester_id: 1, chatroom_receiver_id: 
 
 group1 = Group.create!(
   image_url: "https://images.pexels.com/photos/7632045/pexels-photo-7632045.jpeg",
-  name: "South Mountain Trail run",
+  name: "South Mountain Trail Run",
   about: "Join us this Sunday and kick start your fitness with an energizing, fun group run! Whether you're a beginner, or a regular runner, runners
   and joggers of all skill levels are welcome. We're always excited to meet new people and we always run together as a group!",
   location: uk_cities.sample,
@@ -62,7 +62,7 @@ group1 = Group.create!(
 
 group2 = Group.create!(
   image_url: "https://images.pexels.com/photos/3810788/pexels-photo-3810788.jpeg",
-  name: "Creative Projects Work group",
+  name: "Creative Projects Work",
   about: "This group is open to anyone who identifies as a healer, a creative or solopreneur. Whether this is your main business or a side hustle.
   This is not about promoting what you do: no elevator pitches here! It's about creating an inspiring space where we all work on a project we are trying
   to bring to fruition",
@@ -92,7 +92,7 @@ group4 = Group.create!(
 
 group5 = Group.create!(
   image_url: "https://images.pexels.com/photos/7991661/pexels-photo-7991661.jpeg",
-  name: "Smiths Martial Arts Club",
+  name: "Smith's Martial Arts Club",
   about: "The purpose of this group is to foster a safe and engaging learning environment for Martial Artist regardless of skill level. This group will
   help new students to learn and grow as Martial Artists while developing new skills and confidences. The purpose of this group is to foster a safe and
   engaging learning environment for Martial Artist regardless of skill level. This group will help new students to learn and grow as Martial Artists

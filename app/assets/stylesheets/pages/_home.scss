@@ -49,7 +49,10 @@ h2 {
     display: flex;
     font-size: 32px;
     justify-content: space-evenly;
-    font-family: 'Neucha', cursive;
+    p {
+      font-family: 'Neucha', cursive;
+      // font-weight: 600;
+    }
     i {
       font-size: 46px;
     }
@@ -59,6 +62,7 @@ h2 {
 .choose-your-bond {
   #action-heading {
     text-align: center;
+    font-size: 50px;
     background-color: rgba(248, 231, 233, 0.5);
     padding-top: 48px;
     margin-top: 250px;
@@ -125,10 +129,6 @@ h2 {
   border: 3px solid #fe5055;
 }
 
-p span {
-  display: block;
-}
-
 .btn-desc {
   font-family: 'Kentledge';
 }
@@ -138,8 +138,11 @@ p span {
   font-family: 'Neucha', cursive;
 }
 
-.explore-popular-groups h2 {
-  margin-top: 50px;
+.explore-popular-groups {
+  h2 {
+    font-size: 50px;
+    margin-top: 50px;
+  }
 }
 
 .wrapper {
@@ -175,7 +178,32 @@ p span {
   }
 }
 
-.explore-group-cards-container {
-  column-count: 3;
+// .explore-group-cards-container {
+//   // column-count: 3;
+// }
+
+.group-cards-flexbox {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
 }
 
+.group-card-info-home {
+  padding-left: 48px;
+  font-family: 'Neucha', cursive;
+  color: #7f0924;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  padding-top: 25px;
+}
+
+.group-img-index-home {
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+// p span {
+//   display: block;
+// }
