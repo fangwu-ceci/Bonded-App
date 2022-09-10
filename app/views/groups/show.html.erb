@@ -1,3 +1,4 @@
+
 <div class="container group-show-content row d-flex">
   <div class="group-show-btn-row row">
     <div class="col-12 col-sm-2 .group-show-btn">
@@ -9,20 +10,55 @@
       <%# <a href="" class="btn group-show-btn-content btn-sm btn-block">Events group</a> %>
     </div>
 
-    <img class="col-12 col-sm-4" src=<%= @group.image_url %> alt="">
 
-    <div class="col-12 col-sm-4 text-center group-show-img-content">
-      <h3><strong><%= link_to @group.name, group_path(@group), class: "group-name" %></strong></h3>
-      <p class="group-text-about"><%= @group.about %></p>
+<div class="d-flex justify-content-between">
+  <div class="d-flex group-show-content">
+    <div class="group-show-card-content col-12 col-sm-4">
+      <div class="group-profile d-flex">
+        <div class="card">
+          <img src="<%= @group.image_url %>">
+        </div>
+
+        <div class="card">
+          <h3 id="first-name"><%= @group.name%></h3>
+        <div class="user-info">
+          <p><%= @group.category %></p>
+          <p><%= @group.location %></p>
+        </div>
+
+        <div>
+          <p class="group-show-about"><%= @group.about %></p>
+
+        </div>
+
+        <a href="" class="btn join-btn btn-sm btn-block">Join this group</a>
+
+        <div class="user-socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+
+      </div>
     </div>
-
-    <h2 class="col-12 col-sm-2 text-center border">Map</h2>
   </div>
 
-  <hr class="style-divider-2">
+    <div class="col-12 col-sm-8" style="width: 100%; height: 300px;">
+      <div>
+        <div class= "group-show-map" style="width: 550px; height: 300px;"
+            data-controller="map"
+            data-map-markers-value="<%= @markers.to_json %>"
+            data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+        </div>
 
-  <div class="group-discussion-member-row row">
-    <div class="col-12 col-sm-10 text-center border-none">
+      </div>
+
+    </div>
+
+  </div>
+</div>
+  <div class="row">
+    <div class="col-12 col-sm-10 text-center discussion-container">
       <div class="discussion-card">
         <% @group.posts.each do |post| %>
         <div class="discussion-card-title">
@@ -40,21 +76,16 @@
             <p class="text-md-left"> <%= post.content %></p>
           </div>
         <% end %>
-        <div class="form-card">
-        <h4>Post Your Comments</h4>
+        <h4 id="first-name">Post Your Comments</h4>
           <%= simple_form_for([@group, @post]) do |f| %>
-            <%= f.input :content, label: false, wrapper_html: { class: "nice-class" }%>
-            <%= f.button :submit %>
+            <%= f.input :content, label: false, wrapper_html: { class: "" }%>
+            <%= f.button :submit, class: "join-btn"%>
           <% end %>
-        </div>
       </div>
     </div>
-    <div class="col-12 col-sm-2 border">
-    <h3>Members</h3>
-    <%# <h3><strong>There are <%= user_id.count %><%# members in this group</strong></h3> %> <%# %>
-      <%@group.user_groups.map do |user_group| %>
+    <div class="col-12 col-sm-2">
+      <h3 class="members">Members</h3>
+        <%@group.user_groups.map do |user_group| %>
         <%= image_tag user_group.user.avatar_url, class: "group-show-avatar" %>
-      <% end %>
+        <% end %>
     </div>
-  </div>
-</div>
