@@ -9,5 +9,11 @@ class GroupsController < ApplicationController
   def show
     @group = Group.find(params[:id])
     @post = Post.new
+    @markers = [
+      {
+        lat: @group.latitude,
+        lng: @group.longitude
+      }
+    ]
   end
 end
