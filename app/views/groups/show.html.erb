@@ -1,4 +1,15 @@
 
+<div class="container group-show-content row d-flex">
+  <div class="group-show-btn-row row">
+    <div class="col-12 col-sm-2 .group-show-btn">
+      <%= link_to "Back to groups", groups_path, class: "btn group-show-btn-content btn-sm btn-block" %>
+      <%= simple_form_for [@group, @user_group] do |f| %>
+        <%= f.button :submit %>
+      <% end %>
+      <%= current_user.id %>
+      <%# <a href="" class="btn group-show-btn-content btn-sm btn-block">Events group</a> %>
+    </div>
+
 
 <div class="d-flex justify-content-between">
   <div class="d-flex group-show-content">
