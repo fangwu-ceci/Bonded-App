@@ -2,7 +2,10 @@
   <div class="group-show-btn-row row">
     <div class="col-12 col-sm-2 .group-show-btn">
       <%= link_to "Back to groups", groups_path, class: "btn group-show-btn-content btn-sm btn-block" %>
-      <a href="" class="btn group-show-btn-content btn-sm btn-block">Join this group</a>
+      <%= simple_form_for [@group, @user_group] do |f| %>
+        <%= f.button :submit %>
+      <% end %>
+      <%= current_user.id %>
       <%# <a href="" class="btn group-show-btn-content btn-sm btn-block">Events group</a> %>
     </div>
 
