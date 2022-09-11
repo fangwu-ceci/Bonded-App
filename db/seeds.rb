@@ -32,8 +32,9 @@ Group.destroy_all
 puts "creating users..."
 
 user1 = User.create!(first_name: "Bob", last_name: "Smith", nickname: "Bobby", gender: "Male", age: 34, location: "London", email: "bobby@smith.com", password: "123456",
-  about: " Just moved to London from New York for work. I work in the city and live near Islington. I love a stroll, a beach, rock music, good food and good movies. Keen to meet more like-minded individuals and find a cool community.",
+  about: " Just moved to London from New York for work. I work in the city and live near Islington. I love a stroll, a beach, rock music, good food and good movies. Keen to meet more like-minded individuals and find a cool local community.",
   avatar_url: "https://www.biography.com/.image/t_share/MTgwMjk3MjI5MjU5NTE1MDMw/gettyimages-3315233.jpg")
+  user1.photo.attac
 user2 = User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen", gender: "Female", age: age.sample, location: uk_cities.sample, email: "jen@johnson.com", password: "123456",
   about: "I am passionate about empowering women and would like to find other wonder-women to change the world together",
   avatar_url: "https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min-480x340.jpg")
@@ -41,13 +42,13 @@ user3 = User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", 
   about: "A single mum who wants to find other mums to go shopping and do fun things together, not just talk about changing nappies.",
   avatar_url: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2014/11/4-1.jpg?fit=900%2C675&ssl=1")
 user4 = User.create!(first_name: "Amy", last_name: "Jones", nickname: "Amy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "amy@jones.com", password: "123456",
-  about: "I am a freelance wrirter. I love travelling and writing stories. I'd like to find friends to travel together. My next destination is Argentina.",
+  about: "I am a freelance writer. I love travelling and writing stories. I'd like to find friends to travel together. My next destination is Argentina.",
   avatar_url: "https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80")
 user5 = User.create!(first_name: "Nicolas", last_name: "Johnson", nickname: "Nick", gender: "Male", age: age.sample, location: uk_cities.sample, email: "nick@johnson.com", password: "123456",
   about: "New to the city, looking to meet locals to do sports, i.e. tennis, rugy and climbing.",
   avatar_url:"https://hips.hearstapps.com/hbz.h-cdn.co/assets/17/08/terencetelle.png")
 user6 = User.create!(first_name: "Adam", last_name: "Smith", nickname: "Adam", gender: "Male", age: 34, location: "London", email: "adam@smith.com", password: "123456",
-  about: "Originally from HongKong, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly(becaiuse of my love of food!). I am also a movie enthusiast and run a movie group in Bonded.",
+  about: "Originally from HongKong, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
   avatar_url:"https://media.glamour.com/photos/5b6873f780b8607e43a9ec0e/1:1/w_354%2Cc_limit/river.jpg")
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "Female", age: age.sample, location: uk_cities.sample, email: "emma@baker.com", password: "123456",
   about: "Keen traveller and explorer, want to find some nice friends to enjoy this beautiful city with.",
