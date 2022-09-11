@@ -69,7 +69,6 @@ Chatroom.create!(name: "Emma", chatroom_requester_id: 1, chatroom_receiver_id: 7
 Chatroom.create!(name: "Lizzy", chatroom_requester_id: 1, chatroom_receiver_id: 8)
 Chatroom.create!(name: "Ollie", chatroom_requester_id: 1, chatroom_receiver_id: 9)
 
-
 group1 = Group.create!(
   image_url: "https://images.pexels.com/photos/7632045/pexels-photo-7632045.jpeg",
   name: "South Mountain Trail Run",

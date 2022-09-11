@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   end
   resources :groups, only: [:index, :show, :destroy,] do
     resources :posts, only: [:create]
+    resources :user_groups, only: [:create]
   end
 end

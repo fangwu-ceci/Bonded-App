@@ -1,39 +1,40 @@
-.group-show-btn-content {
-  margin-left: 32px;
-  margin-top: 12px;
-  max-width: 121px;
-  min-width: 121px;
-  background-color: #fe5055;
-  border-radius: 5px;
-  color: #fbecea;
+.group-profile {
+  padding-top: 10px;
+  margin: 0px 100px;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    // max-width: 300px;
+    width: 370px;
+    // height: 600px;
+    margin: 0px;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+    img {
+      width: 100%;
+      // width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
 }
 
-.group-show-btn:hover {
-  border: 3px solid #fe5055;
-  color: #0000008c;
-}
-
-.group-show-content {
-  margin-top: 120px;
-  margin-left: 64px;
-}
-.group-img-show {
-  max-width: 340px;
-  min-width: 340px;
-  max-height: 280px;
-  min-height: 280px;
-  border-radius: 12px;
-  margin-left: 48px;
-}
-
-.group-show-img-content {
-  margin-top: 40px;
-}
-
-.style-divider-2 {
-  color: #0000008c;
+.group-show-card-content {
   margin-top: 16px;
-  max-width: 1032px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 150px;
+}
+
+.join-btn {
+  background-color: #fe5055;
+  border-radius: 50px;
+  color: #fbecea;
+  margin-bottom: 16px;
 }
 
 .group-show-avatar {
@@ -42,9 +43,11 @@
   min-width: 55px;
   max-width: 55px;
   border-radius: 50%;
-  border: white 2px solid;;
+  border: white 2px solid;
   margin-left: 1px;
   margin-top: 2px;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 h2  {
   margin:0;
@@ -63,6 +66,9 @@ p {
   background-color: white;
   border-radius: 5px;
   margin-right: 10px;
+  margin-left: 32px;
+  padding: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .discussion-card-title {
@@ -70,7 +76,7 @@ p {
 }
 
 .card-title-item {
-  margin-left:10px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 
@@ -80,15 +86,28 @@ p {
   padding: 5px;
 }
 
-.nice-class {
-  padding: 10px;
-  margin: auto;
-}
-
-.form-card {
-  padding: 5px;
+.discussion-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .group-show-content {
-  background-color:#fbecea;
+  margin-top: 120px;
+}
+
+.members {
+  font-family: 'Kentledge';
+  font-weight: bolder;
+  margin: 10px 0px;
+  padding-top: 32px;
+}
+
+.group-show-map {
+  border-radius: 20px;
+  margin-top: 24px;
+  padding-left: 64px;
+}
+
+.group-show-about {
+  font-size: 12px;
 }
