@@ -8,7 +8,7 @@
         params[:location]), prompt: 'Any Location', class: 'dropdown btn' %>
     <%= select_tag :category, options_for_select(["Sport & Fitness", "Films", "Technology", "Pets & Animals", "Music", "Art & Culture", ],
         params[:category]), prompt: 'Any Category', class: 'dropdown btn' %>
-    <%= submit_tag "Search", class: "dropdown btn" %><hr class="style-divider">
+    <%= submit_tag "Search", class: "submit-btn-group btn" %><hr class="style-divider">
   <% end %>
 
   <div class="group-cards-container">
