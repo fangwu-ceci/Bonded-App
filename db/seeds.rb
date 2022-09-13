@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 uk_cities = ["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading"];
-age = (28..45).to_a
+age = (24..35).to_a
 
 Post.delete_all
 
@@ -31,40 +31,40 @@ Group.destroy_all
 
 puts "creating users..."
 
-user1 = User.create!(first_name: "Bob", last_name: "Smith", nickname: "Bobby", gender: "Male", age: 34, location: "London", email: "bobby@smith.com", password: "123456",
-  about: " Just moved to London from New York for work. I work in the city and live near Islington. I love a stroll, a beach, rock music, good food and good movies. Keen to meet more like-minded individuals and find a cool local community.",
-  avatar_url: "https://www.biography.com/.image/t_share/MTgwMjk3MjI5MjU5NTE1MDMw/gettyimages-3315233.jpg")
+user1 = User.create!(first_name: "Gemma", last_name: "Smith", nickname: "Gem", gender: "Female", age: 30, location: "London", email: "gemma@smith.com", password: "123456",
+  about: " Just moved to London from HongKong for work. I work in the city and live near Islington. I love a stroll, a beach, rock music, good food and good movies. Keen to meet more like-minded individuals and find a cool local community.",
+  avatar_url: "https://thekit.ca/wp-content/uploads/2020/11/thekitca-Gemma-Chan-feature-1200x1445.jpg")
   user1.photo.attac
 user2 = User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen", gender: "Female", age: age.sample, location: uk_cities.sample, email: "jen@johnson.com", password: "123456",
   about: "I am passionate about empowering women and would like to find other wonder-women to change the world together",
-  avatar_url: "https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min-480x340.jpg")
+  avatar_url: "https://external-preview.redd.it/gyrwQ5fIJ_bI9xUUxSbKSwnmO6TqsJRVevCfsborcwg.jpg?auto=webp&s=d0752e8650570ae74ba9775088b4da1de6a78ccf")
 user3 = User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", gender: "Female", age: age.sample, location: uk_cities.sample, email: "alice@brown.com", password: "123456",
   about: "A single mum who wants to find other mums to go shopping and do fun things together, not just talk about changing nappies.",
-  avatar_url: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2014/11/4-1.jpg?fit=900%2C675&ssl=1")
+  avatar_url: "https://s1.r29static.com/bin/entry/ebe/x,80/2238977/image.jpg")
 user4 = User.create!(first_name: "Amy", last_name: "Jones", nickname: "Amy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "amy@jones.com", password: "123456",
   about: "I am a freelance writer. I love travelling and writing stories. I'd like to find friends to travel together. My next destination is Argentina.",
   avatar_url: "https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80")
 user5 = User.create!(first_name: "Nicolas", last_name: "Johnson", nickname: "Nick", gender: "Male", age: age.sample, location: uk_cities.sample, email: "nick@johnson.com", password: "123456",
   about: "New to the city, looking to meet locals to do sports, i.e. tennis, rugy and climbing.",
-  avatar_url:"https://hips.hearstapps.com/hbz.h-cdn.co/assets/17/08/terencetelle.png")
-user6 = User.create!(first_name: "Adam", last_name: "Smith", nickname: "Adam", gender: "Male", age: 34, location: "London", email: "adam@smith.com", password: "123456",
-  about: "Originally from HongKong, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
-  avatar_url:"https://media.glamour.com/photos/5b6873f780b8607e43a9ec0e/1:1/w_354%2Cc_limit/river.jpg")
+  avatar_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNaYOi9t0p-e4F4MdibsUHgH1dbUELmzAmWw&usqp=CAU")
+user6 = User.create!(first_name: "Jenifer", last_name: "Smith", nickname: "Jenny", gender: "Female", age: 29, location: "London", email: "jenny@smith.com", password: "123456",
+  about: "Originally from US, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
+  avatar_url:"https://i.pinimg.com/474x/98/0a/75/980a758e6596aec603f9d631716a2ad7--women-hair-styles-ferris-bueller.jpg")
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "Female", age: age.sample, location: uk_cities.sample, email: "emma@baker.com", password: "123456",
   about: "Keen traveller and explorer, want to find some nice friends to enjoy this beautiful city with.",
   avatar_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gal_Gadot_by_Gage_Skidmore_2.jpg/1200px-Gal_Gadot_by_Gage_Skidmore_2.jpg")
 user8 = User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "lizzy@taylor.com", password: "123456",
   about: "I am a passionate baker. I love baking lots of cakes in my spare time and would love to find a friend to bake cakes with.",
-  avatar_url: "https://d1vo8zfysxy97v.cloudfront.net/media/blog/abnormal-testosterone-levels-in-women-symptoms-risks-and-helpful-foods_fi_va9185016baf8cec6e6ec901990453bef5ea7d999.jpg")
+  avatar_url: "https://cellularnews.com/wp-content/uploads/2020/06/15-dua-lipa-in-a-pale-pink-suit-325x485.jpg")
 user9 = User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "Male", age: age.sample, location: uk_cities.sample, email: "oliver@jones.com", password: "123456",
   about: "Expanding my social circle, meeting like-minded frineds to check out new foodie haunts and do more activities together.",
-  avatar_url:"https://cavemancircus.com/wp-content/uploads/2019/04/ana-maria-nichita-417521-unsplash-2.jpg")
+  avatar_url:"https://imgix.bustle.com/wmag/2017/08/30/59a6e0083a380e37daab7eb8_1017.flip_.royal_.ms_.royals.lo2_.jpg?w=414&h=538&fit=crop&crop=faces&auto=format%2Ccompress")
 
 Chatroom.create!(name: "Jenny", chatroom_requester_id: 1, chatroom_receiver_id: 2)
 Chatroom.create!(name: "Ally", chatroom_requester_id: 1, chatroom_receiver_id: 3)
 Chatroom.create!(name: "Amy", chatroom_requester_id: 1, chatroom_receiver_id: 4)
 Chatroom.create!(name: "Nick", chatroom_requester_id: 1, chatroom_receiver_id: 5)
-Chatroom.create!(name: "Adam", chatroom_requester_id: 1, chatroom_receiver_id: 6)
+Chatroom.create!(name: "Jennifer", chatroom_requester_id: 1, chatroom_receiver_id: 6)
 Chatroom.create!(name: "Emma", chatroom_requester_id: 1, chatroom_receiver_id: 7)
 Chatroom.create!(name: "Lizzy", chatroom_requester_id: 1, chatroom_receiver_id: 8)
 Chatroom.create!(name: "Ollie", chatroom_requester_id: 1, chatroom_receiver_id: 9)

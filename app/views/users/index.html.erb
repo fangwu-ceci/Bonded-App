@@ -1,13 +1,7 @@
 <div class="user-index-container">
-  <div class="user-index-card-header">
-    <div class="user-index-card-header-title" >
-    Want to find someone to talk to?
-    <br>
-    Find a friend nearby
-    </h2>
-    <p class="fw-light mb-5" >
-    "We support you through the journey of getting to know your new friends, and recommend great groups for you to join together"
-    <p>
+  <div class="user-index-cards-header">
+    <h2 class="user-index-cards-header-h2">Want to find someone to talk to? <br> Find a friend nearby </h2>
+    <p class="user-index-cards-header-p">"We support you through the journey of getting to know your new friends, and recommend great groups for you to join together" </p>
   </div>
   <div class="user-index-cards-body-wrapper row justify-content-center">
     <div class="col-sm-8">
@@ -37,7 +31,7 @@
                   <p class="user-index-indiv-card-profile-gender"><strong>Gender:</strong> <%= user.gender %></p>
                   <p class="user-index-indiv-card-profile-location"><strong>Location:</strong> <%= user.location %></p>
                   <p class="text-md-left"> <%= user.about %></p>
-                                <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
+                  <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
                 </div>
                </div>
               </div>
