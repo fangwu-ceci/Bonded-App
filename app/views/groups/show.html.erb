@@ -9,23 +9,22 @@
         </div>
 
         <div class="card">
-          <h3 id="first-name"><%= @group.name%></h3>
+          <h3 class="group-card-name"><%= @group.name %></h3>
         <div class="user-info">
           <p><%= @group.category %></p>
-          <p><%= @group.location %></p>
+          <p><i class="map-dot-show fa-solid fa-location-dot"></i><%= @group.location %></p>
         </div>
 
         <div>
           <p class="group-show-about"><%= @group.about %></p>
-
         </div>
 
         <a href="" class="btn join-btn btn-sm btn-block">Join this group</a>
 
         <div class="user-socials">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
+          <i id= "group-socials" class="fa-brands fa-facebook"></i>
+          <i id= "group-socials" class="fa-brands fa-instagram"></i>
+          <i id= "group-socials" class="fa-brands fa-twitter"></i>
         </div>
 
       </div>
@@ -73,8 +72,10 @@
       </div>
     </div>
     <div class="col-12 col-sm-2">
-      <h3 class="members">Members</h3>
+      <h3 class="members">Members ( )</h3>
         <%@group.user_groups.map do |user_group| %>
-        <%= image_tag user_group.user.avatar_url, class: "group-show-avatar" %>
+        <%# <%= link_to image_tag user_group.user.avatar_url, user_group_path(user_group) class: "group-show-avatar" %> %>
+         <%= link_to image_tag user_group.user.avatar_url, user_path(user_group.user) class: "group-show-avatar" %>
+
         <% end %>
     </div>

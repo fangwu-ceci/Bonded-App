@@ -6,7 +6,7 @@
     // max-width: 300px;
     width: 370px;
     // height: 600px;
-    margin: 0px;
+    margin-left: 16px;
     padding: 20px 20px;
     text-align: center;
     border-radius: 10px;
@@ -35,6 +35,10 @@
   border-radius: 50px;
   color: #fbecea;
   margin-bottom: 16px;
+}
+
+.join-btn:hover {
+  color: #fe5055;;
 }
 
 .group-show-avatar {
@@ -100,6 +104,7 @@ p {
   font-weight: bolder;
   margin: 10px 0px;
   padding-top: 32px;
+  font-size: 20px;
 }
 
 .group-show-map {
@@ -110,4 +115,27 @@ p {
 
 .group-show-about {
   font-size: 12px;
+}
+
+#group-socials:hover {
+  color: #fe5055;
+}
+
+.group-card-name {
+  margin: 20px;
+  font-family: 'Kentledge';
+  font-weight: bolder;
+  margin: 10px 0px;
+  color: black;
+}
+
+.map-dot-show {
+  font-size: 16px;
+  padding-right: 4px;
+  padding-top: 4px;
+  /* color: white; */
+  /* text-shadow: -1px 1px 0 #0000008c,
+  1px 1px 0 #0000008c,
+  1px -1px 0 #0000008c,
+  -1px -1px 0 #0000008c;  to make white with black border */
 }
