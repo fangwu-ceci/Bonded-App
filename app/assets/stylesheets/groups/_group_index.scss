@@ -39,6 +39,7 @@
   max-height: 140px;
   max-width: 210px;
   min-width: 210px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .group-name {
@@ -68,4 +69,11 @@
 
 .group-text-about {
   padding-top: 8px;
+}
+
+.map-dot-index {
+  padding: 0px 8px;
+  padding-left: 8px;
+  padding-right: 6px;
+  padding-bottom: 6px;
 }
