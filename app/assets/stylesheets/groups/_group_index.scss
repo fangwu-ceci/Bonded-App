@@ -10,6 +10,21 @@
   color: #fe5055;;
 }
 
+
+.submit-btn-group {
+  background-color: white;
+  border: 1px solid #fe5055;
+  border-radius: 50px;
+  color: #fe5055;
+  font-family: 'Kentledge';
+  margin-left: 8px;
+}
+
+.submit-btn-group:hover {
+  color: #fe5055;
+  border: 1px solid #fe5055;
+}
+
 .group-cards-container {
   margin-top: 32px;
   padding-bottom: 32px;
@@ -76,4 +91,6 @@
   padding-left: 8px;
   padding-right: 6px;
   padding-bottom: 6px;
+  font-size: 20px;
+  color: #fe5055;
 }
