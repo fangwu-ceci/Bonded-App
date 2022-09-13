@@ -1,6 +1,6 @@
-<div class="user-index-container container">
-  <div class="user-index-card-header text-center">
-    <h2 >
+<div class="user-index-container">
+  <div class="user-index-card-header">
+    <div class="user-index-card-header-title" >
     Want to find someone to talk to?
     <br>
     Find a friend nearby
@@ -27,19 +27,19 @@
           <%= link_to user_path(user), class: "text-decoration-none text-dark" do %>
             <div class="user-index-cards ">
               <div class="user-index-indiv-card" style="background-color :white">
-                <div class="user-index-indiv-card-title">
+              <div class="user-index-indiv-card-top">
+                <div class="user-index-indiv-card-avatar">
                   <%= image_tag user.avatar_url, class:"avatar-large" %>
-                  <p class="text-xl-left text-uppercase fw-bold"> <%= user.nickname %> </p>
                 </div>
-                <div class="user-index-indiv-card-text">
-                  <p class="text-md-left"><strong>Age:</strong> <%= user.age %></p>
-                  <p class="text-md-left"><strong>Gender:</strong> <%= user.gender %></p>
-                  <p class="text-md-left"><strong>Location:</strong> <%= user.location %></p>
-                </div>
-                <div class="user-index-indiv-card-text">
+                <div class="user-index-indiv-card-profile">
+                  <h3 class="user-index-indiv-card-profile-name"> <strong><%= user.nickname %></strong></h3>
+                  <p class="user-index-indiv-card-profile-age"><strong>Age:</strong> <%= user.age %></p>
+                  <p class="user-index-indiv-card-profile-gender"><strong>Gender:</strong> <%= user.gender %></p>
+                  <p class="user-index-indiv-card-profile-location"><strong>Location:</strong> <%= user.location %></p>
                   <p class="text-md-left"> <%= user.about %></p>
+                                <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
                 </div>
-                 <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
+               </div>
               </div>
               <div class="user-index-card-icons">
                 <i class="fab fa-instagram"></i>

@@ -11,21 +11,30 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 50px;
+  padding: 20px;
   border-radius: 20px;
   border: white;
   background: white;
-  max-width: 640px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .user-index-indiv-cards {
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 10px;
   background: #fff;
   transition: border 1s;
+}
+
+.user-index-indiv-card-top{
+  display:flex;
+}
+.user-index-indiv-card-profile {
+ margin-left: 20px;
+ margin-top:20px;
 }
 
 .user-index-card-icons {
@@ -34,7 +43,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
 .user-index-indiv-card .p {
@@ -62,4 +71,9 @@ h2 {
 
 .user-index-container {
   background-color:#fbecea;
+  width:100%;
+}
+
+.user-index-indiv-card-avatar {
+  margin:auto;
 }
