@@ -1,12 +1,12 @@
 <div class="user-index-container">
   <div class="user-index-cards-header">
-    <h2 class="user-index-cards-header-h2">Want to find someone to talk to? <br> Find a friend nearby </h2>
+    <h2 class="user-index-cards-header-h2 ">Want to find someone to talk to? <br> Find a friend nearby </h2>
     <p class="user-index-cards-header-p">"We support you through the journey of getting to know your new friends, and recommend great groups for you to join together" </p>
   </div>
-  <div class="user-index-cards-body-wrapper row justify-content-center">
-    <div class="col-sm-8">
-      <h2>Search for a friend</h2>
-      <%= form_tag(users_path, :method => "get", id: "search-form") do %>
+  <div class="user-index-cards-body-wrapper d-flex row justify-content-center">
+    <div class="user-index-cards-search-body">
+      <h2 class="user-index-cards-search-body-h2">Search for a friend</h2>
+      <%= form_tag(users_path, :method => "get", id: "user-search-form") do %>
         <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
         params[:location]), prompt: 'Location', class: 'dropdown btn' %>
         <%= select_tag :min_age, options_for_select(18..65), prompt: 'Min age', class: 'dropdown btn' %>
@@ -24,6 +24,11 @@
               <div class="user-index-indiv-card-top">
                 <div class="user-index-indiv-card-avatar">
                   <%= image_tag user.avatar_url, class:"avatar-large" %>
+                  <div class="user-index-card-icons">
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  </div>
                 </div>
                 <div class="user-index-indiv-card-profile">
                   <h3 class="user-index-indiv-card-profile-name"> <strong><%= user.nickname %></strong></h3>
@@ -34,11 +39,6 @@
                   <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
                 </div>
                </div>
-              </div>
-              <div class="user-index-card-icons">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
               </div>
             </div>
           <% end %>
