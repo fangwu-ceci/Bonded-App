@@ -38,26 +38,23 @@ class UsersController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
+  
+  def edit
+  end
+
+  def update
+    if @user.update(user_params)
+      redirect_to @user, notice: 'Profile was successfuly updated.'
+  end
 end
 
+  private
 
+  def set_user
+    @user = User.find(params[:id])
+  end
 
-# Solution 1:
-# if params[:min_age].present?
-#   sql_query = "location ILIKE ? AND gender = ? AND age BETWEEN ? AND ?", "%#{location}%", "#{gender}", min_age, max_age
-#   @users = User.where(sql_query)
-# else
-#   @users = User.all
-# end
-
-# Solution 2:
-# if params[:commit] && (!params[:min_age].present? || !params[:max_age].present? || !params[:location].present? || !params[:gender].present?)
-#   flash[:alert] = "Fill out all the info"
-#   @users = User.all
-# elsif params[:min_age].present?
-#   sql_query = "location ILIKE ? AND gender = ? AND age BETWEEN ? AND ?", "%#{location}%", "#{gender}", min_age, max_age
-#   @users = User.where(sql_query)
-# else
-#   @users = User.all
-# end
-# end
+  def user_params
+    params.require(:user).permit(:name, :location, :age, :about, :photo)
+  end
+end

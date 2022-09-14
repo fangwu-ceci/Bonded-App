@@ -1,14 +1,14 @@
-<div class="group-container container">
+<div class="group-contain container">
   <div class="heading">
     <h1><strong>There are <%= @groups.count %> groups near you</strong></h1>
   </div>
 
   <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
     <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
-        params[:location]), prompt: 'Preferred Location', class: 'dropdown btn' %>
+        params[:location]), prompt: 'Any Location', class: 'dropdown btn' %>
     <%= select_tag :category, options_for_select(["Sport & Fitness", "Films", "Technology", "Pets & Animals", "Music", "Art & Culture", ],
-        params[:category]), prompt: 'Preferred Category', class: 'dropdown btn' %>
-    <%= submit_tag "Search", class: "submit btn" %><hr class="style-divider">
+        params[:category]), prompt: 'Any Category', class: 'dropdown btn' %>
+    <%= submit_tag "Search", class: "submit-btn-group btn" %><hr class="style-divider">
   <% end %>
 
   <div class="group-cards-container">
@@ -17,9 +17,9 @@
       <img class="group-img-index" src=<%= group.image_url %> alt="">
       <div class="group-card-info">
         <h3><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></h3>
-        <h4 class="group-text"><%= group.location %></h4>
-        <h4 class="group-text"><strong><%= group.category %></strong></h4>
-        <p class="group-text-about"><%= group.about %></p>
+        <h4><strong><%= group.category %></strong></h4>
+        <h4><i class="map-dot-index fa-solid fa-location-dot"></i><%= group.location %></h4>
+        <p><%= group.about%></p>
       </div>
     </div>
       <hr class="style-divider">

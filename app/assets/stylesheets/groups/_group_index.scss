@@ -2,15 +2,27 @@
   background-color: #fe5055;
   border-radius: 50px;
   color: #fbecea;
+  font-family: 'Kentledge';
+  margin-left: 8px;
 }
 
 .dropdown:hover {
-  border: 3px solid #fe5055;
-  color: #0000008c;
+  color: #fe5055;;
 }
 
-.group-container {
-  background-color: #fbecea;;
+
+.submit-btn-group {
+  background-color: white;
+  border: 1px solid #fe5055;
+  border-radius: 50px;
+  color: #fe5055;
+  font-family: 'Kentledge';
+  margin-left: 8px;
+}
+
+.submit-btn-group:hover {
+  color: #fe5055;
+  border: 1px solid #fe5055;
 }
 
 .group-cards-container {
@@ -27,14 +39,14 @@
 .group-card-info {
   padding-left: 48px;
   font-family: 'Neucha', cursive;
-  color: #7f0924;
   text-decoration: none;
+  font-family: 'Kentledge';
 }
 
 .heading {
   padding-top: 80px;
   padding-bottom: 32px;
-  color: #7f0924;
+  font-family: 'Kentledge';
 }
 
 .group-img-index {
@@ -42,22 +54,18 @@
   max-height: 140px;
   max-width: 210px;
   min-width: 210px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .group-name {
-  color: #7f0924;
+  font-family: 'Kentledge';
   text-decoration: none;
   padding-top: 2px;
+  color: black;
 }
 
 .group-name:hover {
   color: #fe5055;
-}
-
-.submit {
-  color: #fe5055;
-  background-color: #fbecea;
-  box-shadow: none !important
 }
 
 .submit:hover {
@@ -76,4 +84,13 @@
 
 .group-text-about {
   padding-top: 8px;
+}
+
+.map-dot-index {
+  padding: 0px 8px;
+  padding-left: 8px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  font-size: 20px;
+  color: #fe5055;
 }
