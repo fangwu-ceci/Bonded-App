@@ -194,6 +194,11 @@ h2 {
   padding: 10px;
   font-size: 24px;
   padding-top: 25px;
+  a {
+    font-size: 26px;
+    font-family: 'Neucha', cursive;
+    color: #7f0924;
+  }
 }
 
 .group-img-index-home {
@@ -201,6 +206,7 @@ h2 {
   max-width: 300px;
 }
 
-.location-colour {
+.group-location {
+  font-size: 22px;
   color: #282828;
 }

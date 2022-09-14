@@ -11,7 +11,7 @@
         params[:location]), prompt: 'Location', class: 'dropdown btn' %>
         <%= select_tag :min_age, options_for_select(18..65), prompt: 'Min age', class: 'dropdown btn' %>
         <%= select_tag :max_age, options_for_select(18..65), prompt: 'Max age', class: 'dropdown btn' %>
-        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Preferred gender', class: 'dropdown btn' %>
+        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Gender', class: 'dropdown btn' %>
         <%= submit_tag "Search", class: 'btn btn-info' %>
       <% end %>
     </div>
