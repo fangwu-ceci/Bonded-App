@@ -36,14 +36,12 @@
   <div class="options">
     <div>
     <%= button_to "Meet a friend", users_path, :method => "get", class: "bond-btn button-neon" %>
-      <p class="btn-desc">
-        <span>Discover and chat with new people nearby</span><span>who share similar interests.</span>
-      </p>
+      <p class="btn-desc">Discover and chat with new people nearby<br>who share similar interests.</p>
     </div>
     <div>
       <%= button_to "Join a group", groups_path, :method => "get", class: "bond-btn button-neon" %>
       <p class="btn-desc">
-        <span>Join groups and find communities</span><span>with common interests.</span>
+        <span>Join groups and find communities<br>with common interests.</span>
       </p>
     </div>
   </div>
@@ -58,7 +56,7 @@
                 <img class="group-img-index-home" src=<%= group.image_url %> alt="">
                 <div class="group-card-info-home">
                   <div><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></div>
-                  <div class="card-text fw-bold"><span class="text-secondary"><%= group.location %></span></div>
+                  <div class="card-text fw-bold"><span class="location-colour"><%= group.location %></span></div>
                 </div>
               </div>
             <% end %>

@@ -1,8 +1,11 @@
 #first-name {
+  color: #7f0924;
   margin: 20px;
-  font-family: 'Kentledge';
-  font-weight: bolder;
-  margin: 10px 0px;
+  font-family: 'Neucha', cursive;
+  font-size: 34px;
+  // font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .user-show-content {
@@ -13,17 +16,19 @@
 }
 
 .user-profile {
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: 0px 100px;
+  margin-right: 45px;
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     // max-width: 300px;
-    width: 370px;
+    width: 400px;
     // height: 600px;
     margin: auto;
     padding: 20px 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     img {
       width: 100%;
       // width: 200px;
@@ -44,20 +49,31 @@ p {
 .user-socials {
   display: flex;
   justify-content: space-evenly;
+  .fa-instagram:hover {
+    color: #fe5055;
+  }
+  .fa-facebook:hover {
+    color: #fe5055;
+  }
+  .fa-twitter:hover {
+    color: #fe5055;
+  }
+  .fa-linkedin:hover {
+    color: #fe5055;
+  }
 }
-
 .user-info {
   display: flex;
   justify-content: space-evenly;
 }
 
 .chat-btn {
+  font-size: 16px;
   margin: 25px 80px;
   // margin: 0px 100px;
   margin-top: 30px;
   margin-bottom: 25px;
   padding: 9px 16px;
-  font-size: 20px;
   border-radius: 100px;
   background-color: #fe5055;
   border: 3px solid #fe5055;
@@ -68,34 +84,104 @@ p {
 }
 .chat-btn:hover {
   background-color: transparent;
-  color: black;
+  color: #fe5055;
   box-shadow: 0 0 10px 0 #fe5055 inset, 0 0 20px 2px #fe5055;
   border: 3px solid #fe5055;
 }
 
 .user-show-container {
-  margin-top: 100px;
+  margin-top: 85px;
+  margin-left: 60px;
+  margin-right: 60px;
   border-radius: 25px;
-  width: 1050px;
-  height: 100%;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   background-color: rgba(248, 231, 233, 0.5);
-  width: 100%;
+  // width: 1050px;
+  // width: 100%;
+  // height: 100%;
 }
 
 .user-show-map {
+  margin-top: 50px;
   margin: 31px 100px;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .h2-groups {
-  margin: 0px 100px;
-  padding: 30px 10px;
+  // margin: 0px 100px;
+  padding: 30px 20px;
+  padding-bottom: 16px;
+  font-size: 34px;
 }
 
 .user-show-about {
   font-size: 14px;
+  // margin: 20px;
+  // margin-bottom: 40px;
 }
 
-.user-show-map {
-    margin-top: 15px;
+.user-show-groups {
+  // margin: 20px 0px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 500px;
+  height: 356px;
+  margin: 0px 100px;
+  // position: relative;
+}
+
+.user-show-group-card {
+  // width: 500px;
+  // height: 300px;
+  // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  // border-radius: 20px;
+  grid-area: user-show-group-card;
+  overflow-y: auto;
+  height: 72%;
+  // width: 80%;
+  // position: absolute;
+  // width: 370px;
+  // padding: 20px 20px;
+  a {
+    text-decoration: none;
+  }
+}
+.user-show-group-card::-webkit-scrollbar {
+  display: none;
+}
+
+
+.single-group-card {
+  display: flex;
+  margin: 10px 26px;
+  background: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  img {
+    margin-right: 20px;
+  }
+  .user-show-group-name {
+    color: #7f0924;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  .user-show-group-name:hover {
+    color: #fe5055;
+  }
+  .user-show-group-location {
+    color: black;
+    font-size: 15px;
+  }
+}
+
+.user-profile-card-background {
+  background: rgba(255, 255, 255, 0.7);
+  // border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }

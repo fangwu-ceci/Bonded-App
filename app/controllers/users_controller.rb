@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @group = Group.find(params[:id])
     @markers = [
       {
         lat: @user.latitude,
@@ -26,16 +27,20 @@ class UsersController < ApplicationController
       }
     ]
     @chatroom_data = Chatroom.where(chatroom_requester_id: @user.id,  chatroom_receiver_id: current_user).first.present? ?
-        Chatroom.where(chatroom_requester_id: @user.id, chatroom_receiver_id: current_user).first :
-        Chatroom.where(chatroom_requester_id: current_user, chatroom_receiver_id: @user.id).first
+      Chatroom.where(chatroom_requester_id: @user.id, chatroom_receiver_id: current_user).first :
+      Chatroom.where(chatroom_requester_id: current_user, chatroom_receiver_id: @user.id).first
+
+    @user_groups = UserGroup.where(user_id: @user.id)
+  end
+
+  private
+
+  def set_user
+    @user = User.find(params[:id])
   end
 end
 
-private
 
-    def set_user
-      @user = User.find(params[:id])
-    end
 
 # Solution 1:
 # if params[:min_age].present?

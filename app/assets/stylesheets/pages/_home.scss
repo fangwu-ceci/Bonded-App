@@ -51,6 +51,7 @@ h2 {
     justify-content: space-evenly;
     p {
       font-family: 'Neucha', cursive;
+      color: #282828;
       // font-weight: 600;
     }
     i {
@@ -124,7 +125,7 @@ h2 {
 }
 .button-neon:hover {
   background-color: transparent;
-  color: black;
+  color: #fe5055;
   box-shadow: 0 0 10px 0 #fe5055 inset, 0 0 20px 2px #fe5055;
   border: 3px solid #fe5055;
 }
@@ -178,10 +179,6 @@ h2 {
   }
 }
 
-// .explore-group-cards-container {
-//   // column-count: 3;
-// }
-
 .group-cards-flexbox {
   display: flex;
   justify-content: space-between;
@@ -204,6 +201,6 @@ h2 {
   max-width: 300px;
 }
 
-// p span {
-//   display: block;
-// }
+.location-colour {
+  color: #282828;
+}
