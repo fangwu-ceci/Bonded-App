@@ -56,7 +56,7 @@
                 <img class="group-img-index-home" src=<%= group.image_url %> alt="">
                 <div class="group-card-info-home">
                   <div><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></div>
-                  <div class="card-text fw-bold"><span class="location-colour"><%= group.location %></span></div>
+                  <div class="card-text fw-bold"><span class="group-location"><%= group.location %></span></div>
                 </div>
               </div>
             <% end %>
