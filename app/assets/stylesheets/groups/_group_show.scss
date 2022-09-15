@@ -100,11 +100,11 @@ p {
 }
 
 .members {
-  color: #7f0924;
-  font-family: 'Neucha', cursive;
-  font-weight: bolder;
+  color: black;
+  font-family: 'Kentledge';
   margin: 8px 0px 10px 16px;
   font-size: 24px;
+  font-weight: bolder;
 }
 
 .group-show-map {
@@ -160,4 +160,11 @@ p {
   font-size: 34px;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.members-divider {
+  color: black;
+  margin: 0px 48px 4px 8px;
+  border-top: 2px solid;
+  border-radius: 2px;
 }
