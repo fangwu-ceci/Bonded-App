@@ -1,52 +1,59 @@
-<div class="user-show-container">
- <div class="user-show-content">
-  <div class="user-profile">
-    <div class="card">
-    <%# <% if @user.photo.attached?  %>
-      <%# <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
-      <%# <% else  %>
-      <img src="<%= @user.avatar_url %>">
-      <%# <% end %>
-      <%# <%= simple_form_for(@user) do |f| %>
-      <%# <%= f.input :photo, as: :file %>
-      <%# <%= f.button :submit %>
-      <%# <% end %> 
-    </div>
-    <div class="card">
-      <h3 id="first-name"><%= @user.first_name %> <%= @user.last_name %></h3>
-      <div class="user-info">
-        <p><%= @user.gender %></p>
-        <p><%= @user.age %></p>
-        <p><%= @user.location %></p>
-    </div>
-      <div class="user-bio">
-        <p class="user-show-about"><%= @user.about %></p>
-      </div>
-      <% if @user.id != current_user.id %>
-          <%= button_to "Chat", chatroom_path(@chatroom_data), :method => "get", class: "chat-btn" %>
+<div class="user-container">
+  <div class="user-show-content">
+    <div class="user-profile">
+      <div class="card user-profile-card-background">
+          <%# <% if @user.photo.attached?  %>
+          <%# <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
+          <%# <% else  %>
+          <img src="<%= @user.avatar_url %>">
+          <%# <% end %>
+          <%# <%= simple_form_for(@user) do |f| %>
+          <%# <%= f.input :photo, as: :file %>
+          <%# <%= f.button :submit %>
+          <%# <% end %>
+        <h3 id="first-name"><%= @user.first_name %> <%= @user.last_name %></h3>
+        <div class="user-info">
+          <p><strong><%= @user.gender %></strong></p>
+          <p><strong><%= @user.age %></strong></p>
+          <p><strong><%= @user.location %></strong></p>
+        </div>
+        <div class="user-bio">
+          <p class="user-show-about"><%= @user.about %></p>
+        </div>
+        <% if @user.id != current_user.id %>
+          <%= button_to "Message", chatroom_path(@chatroom_data), :method => "get", class: "chat-btn" %>
+
         <% end %>
-      <div class="user-socials">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </div>
-      <div>
-        <%= button_to "Back to all users", users_path, :method => "get", class: "btn m-10" %>
-      </div>
+        <div class="user-socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
       </div>
     </div>
     <div class="user-other" style="width: 100%; height: 300px;">
       <div>
-        <div class= "user-show-map" style="width: 550px; height: 300px;"
+        <div class= "user-show-map" style="width: 500px; height: 255px;"
           data-controller="map"
           data-map-markers-value="<%= @markers.to_json %>"
-          data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+          data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
         </div>
-      <div>
-      <div>
+      </div>
+      <div class="user-show-groups">
         <h2 class="h2-groups">Groups</h2>
+        <div class="user-show-group-card">
+          <% @user_groups.each do |user_group| %>
+            <div class="single-group-card">
+              <%= image_tag(user_group.group.image_url, height: "80", style:"border-radius: 10px;") %>
+              <%= link_to group_path(user_group.group) do %>
+                <p class="user-show-group-name"><strong><%= user_group.group.name %></strong></p>
+                <p class="user-show-group-location"><strong><%= user_group.group.location %></strong></p>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      </div>
       </div>
     </div>
   </div>
- </div>
 </div>

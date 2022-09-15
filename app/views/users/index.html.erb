@@ -1,17 +1,22 @@
-<div class="user-index-container">
+<div class="user-container">
   <div class="user-index-cards-header">
-    <h2 class="user-index-cards-header-h2 ">Want to find someone to talk to? <br> Find a friend nearby </h2>
-    <p class="user-index-cards-header-p">"We support you through the journey of getting to know your new friends, and recommend great groups for you to join together" </p>
+    <h2 class="user-index-cards-header-h2 ">
+      Start meeting new people<br>in your area!
+    </h2>
   </div>
   <div class="user-index-cards-body-wrapper d-flex row justify-content-center">
     <div class="user-index-cards-search-body">
-      <h2 class="user-index-cards-search-body-h2">Search for a friend</h2>
+      <p class="user-index-cards-header-p">
+        1. Filter by location, age, gender
+        2. Select your bond
+        3. Send them a message!
+      </p>
       <%= form_tag(users_path, :method => "get", id: "user-search-form") do %>
         <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
         params[:location]), prompt: 'Location', class: 'dropdown btn' %>
         <%= select_tag :min_age, options_for_select(18..65), prompt: 'Min age', class: 'dropdown btn' %>
         <%= select_tag :max_age, options_for_select(18..65), prompt: 'Max age', class: 'dropdown btn' %>
-        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Preferred gender', class: 'dropdown btn' %>
+        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Gender', class: 'dropdown btn' %>
         <%= submit_tag "Search", class: 'btn btn-info' %>
       <% end %>
     </div>
@@ -26,21 +31,35 @@
                   <%# <% if user.photo.attached?  %>
                     <%# <%= cl_image_tag user.photo.key, height: 300, width: 400, crop: :fill, class:"avatar-large" %>
                   <%# <% else  %>
-                    <img src="<%= user.avatar_url %>" class="avatar-large">
+                    <%= image_tag user.avatar_url, class:"avatar-large" %>
                   <%# <% end %>
-                  <div class="user-index-card-icons">
+                  <%# <div class="user-index-card-icons">
                   <i class="fab fa-instagram"></i>
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook"></i>
-                  </div>
+                  </div> %>
                 </div>
                 <div class="user-index-indiv-card-profile">
-                  <h3 class="user-index-indiv-card-profile-name"> <strong><%= user.nickname %></strong></h3>
-                  <p class="user-index-indiv-card-profile-age"><strong>Age:</strong> <%= user.age %></p>
-                  <p class="user-index-indiv-card-profile-gender"><strong>Gender:</strong> <%= user.gender %></p>
-                  <p class="user-index-indiv-card-profile-location"><strong>Location:</strong> <%= user.location %></p>
+                  <h3 class="user-index-indiv-card-profile-name"> <strong><%= user.first_name %> <%= user.last_name %> </strong></h3>
+
+                <div class="user-index-profile-info">
+                  <p>
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <%= user.age %>
+                  </p>
+
+                  <p>
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <%= user.gender %>
+                  </p>
+
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <%= user.location %>
+                  </p>
+                </div>
                   <p class="text-md-left"> <%= user.about %></p>
-                  <%= button_to "View Profile", user_path(user), :method => "get", class: "btn" %>
+                  <%= button_to "View Profile", user_path(user), :method => "get", class: "view-profile-btn" %>
                 </div>
                </div>
               </div>
