@@ -2,12 +2,15 @@
  <div class="user-show-content">
   <div class="user-profile">
     <div class="card">
+    <%# <% if @user.photo.attached?  %>
+      <%# <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
+      <%# <% else  %>
       <img src="<%= @user.avatar_url %>">
-      <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
-      <%= simple_form_for(@user) do |f| %>
-      <%= f.input :photo, as: :file %>
-      <%= f.button :submit %>
-      <% end %>
+      <%# <% end %>
+      <%# <%= simple_form_for(@user) do |f| %>
+      <%# <%= f.input :photo, as: :file %>
+      <%# <%= f.button :submit %>
+      <%# <% end %> %>
     </div>
     <div class="card">
       <h3 id="first-name"><%= @user.first_name %> <%= @user.last_name %></h3>

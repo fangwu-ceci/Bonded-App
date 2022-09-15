@@ -23,7 +23,11 @@
               <div class="user-index-indiv-card" style="background-color :white">
               <div class="user-index-indiv-card-top">
                 <div class="user-index-indiv-card-avatar">
-                  <%= image_tag user.avatar_url, class:"avatar-large" %>
+                  <%# <% if user.photo.attached?  %>
+                    <%# <%= cl_image_tag user.photo.key, height: 300, width: 400, crop: :fill, class:"avatar-large" %>
+                  <%# <% else  %>
+                    <img src="<%= user.avatar_url %>" class="avatar-large">
+                  <%# <% end %>
                   <div class="user-index-card-icons">
                   <i class="fab fa-instagram"></i>
                   <i class="fab fa-twitter"></i>
