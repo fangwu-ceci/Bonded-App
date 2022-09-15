@@ -7,17 +7,21 @@
 // }
 
 .user-index-cards-header-h2 {
+  text-align: center;
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
 .user-index-cards-header-p {
+  text-align: center;
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
 }
 .user-index-cards{
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -27,7 +31,9 @@
   border: white;
   background: white;
   max-width: 800px;
-  margin: 0 auto;
+  // margin: 0 auto;
+  width: 60%;
+  margin: 10px 250px;
 }
 .user-index-indiv-cards {
   display: flex;
@@ -35,16 +41,22 @@
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
-  background: #fff;
+  // background: #fff;
   transition: border 1s;
 }
 
 .user-index-indiv-card-top{
   display:flex;
 }
+
 .user-index-indiv-card-profile {
- margin-left: 20px;
+ margin-left: 12px;
  margin-top:20px;
+ p {
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 16px;
+ }
 }
 
 .user-index-card-icons {
@@ -87,7 +99,7 @@
 }
 
 .user-index-indiv-card-avatar {
-  margin:auto;
+  margin: 14px 10px;
 }
 
 .navbar-body-space {
@@ -106,4 +118,44 @@
   align-items: center;
   justify-content: center;
   width:100%;
+}
+
+.fa-cake-candles {
+  margin-right: 20px;
+}
+
+.fa-venus-mars {
+  margin-right: 20px;
+}
+
+.fa-location-dot{
+  margin-right: 20px;
+}
+
+.user-index-profile-info {
+  display: flex;
+  margin: 24px 5px;
+  p {
+    margin-right: 55px;
+  }
+}
+
+.view-profile-btn {
+  font-size: 15px;
+  /* margin: 25px 80px; */
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 4px 20px;
+  border-radius: 100px;
+  background-color: #fe5055;
+  border: 3px solid #fe5055;
+  border-radius: 50px;
+  transition: all .15s ease-in-out;
+  color: #fff;
+}
+.view-profile-btn:hover {
+  background-color: transparent;
+  color: #fe5055;
+  box-shadow: 0 0 10px 0 #fe5055 inset, 0 0 20px 2px #fe5055;
+  border: 3px solid #fe5055;
 }

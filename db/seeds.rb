@@ -39,7 +39,7 @@ user2 = User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen",
   about: "Have been working in the creative industry for some time, I have developed a strong interest in art and music. Want to find some cool friends to checkout new art exhibitions and cool gigs in town. I am also very passionate about empowering women and would like to find other wonder-women to change the world together. ",
   avatar_url: "https://external-preview.redd.it/gyrwQ5fIJ_bI9xUUxSbKSwnmO6TqsJRVevCfsborcwg.jpg?auto=webp&s=d0752e8650570ae74ba9775088b4da1de6a78ccf")
 user3 = User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", gender: "Female", age: age.sample, location: uk_cities.sample, email: "alice@brown.com", password: "123456",
-  about: "A single mum who wants to find other mums to go shopping and do fun things together, not just talk about changing nappies.",
+  about: "I’m always up for long walks in nature, or driving the scenic route. I write articles, take photographs and sing in the car…badly. I want to know what you’re into…what’s your motivation? There was no uncomplicated option for ‘have a kid’, but I have a kid (and she’s really cool).",
   avatar_url: "https://s1.r29static.com/bin/entry/ebe/x,80/2238977/image.jpg")
 user4 = User.create!(first_name: "Amy", last_name: "Jones", nickname: "Amy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "amy@jones.com", password: "123456",
   about: "I am a freelance writer. I love travelling and writing stories. I have been to over 30 countries and 200 cities. I'd like to find like- minded friends to travel together. My next destination is Argentina. I prefer mountains over beaches.",
@@ -47,7 +47,7 @@ user4 = User.create!(first_name: "Amy", last_name: "Jones", nickname: "Amy", gen
 user5 = User.create!(first_name: "Nicolas", last_name: "Johnson", nickname: "Nick", gender: "Male", age: age.sample, location: uk_cities.sample, email: "nick@johnson.com", password: "123456",
   about: "New to the city, looking to meet locals to do sports with, i.e. tennis, rugy and climbing. I am currently a member of a local tennis club and would love to find a mate nearby to practice tennis together! ",
   avatar_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNaYOi9t0p-e4F4MdibsUHgH1dbUELmzAmWw&usqp=CAU")
-user6 = User.create!(first_name: "Jenifer", last_name: "Smith", nickname: "Jenny", gender: "Female", age: 29, location: "London", email: "jenny@smith.com", password: "123456",
+user6 = User.create!(first_name: "Jennifer", last_name: "Smith", nickname: "Jenny", gender: "Female", age: 29, location: "London", email: "jenny@smith.com", password: "123456",
   about: "Originally from US, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
   avatar_url:"https://i.pinimg.com/474x/98/0a/75/980a758e6596aec603f9d631716a2ad7--women-hair-styles-ferris-bueller.jpg")
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "Female", age: age.sample, location: uk_cities.sample, email: "emma@baker.com", password: "123456",
