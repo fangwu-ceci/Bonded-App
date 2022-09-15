@@ -28,12 +28,11 @@
               <div class="user-index-indiv-card" style="background-color :white">
               <div class="user-index-indiv-card-top">
                 <div class="user-index-indiv-card-avatar">
+                  <%# <% if user.photo.attached?  %>
+                    <%# <%= cl_image_tag user.photo.key, height: 300, width: 400, crop: :fill, class:"avatar-large" %>
+                  <%# <% else  %>
                   <%= image_tag user.avatar_url, class:"avatar-large" %>
-                  <%# <div class="user-index-card-icons">
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-facebook"></i>
-                  </div> %>
+                  <%# <% end %>
                 </div>
                 <div class="user-index-indiv-card-profile">
                   <h3 class="user-index-indiv-card-profile-name"> <strong><%= user.first_name %> <%= user.last_name %> </strong></h3>
