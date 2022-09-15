@@ -44,7 +44,7 @@
 }
 
 .heading {
-  padding-top: 80px;
+  padding-top: 64px;
   padding-bottom: 32px;
   font-family: 'Kentledge';
 }
@@ -55,13 +55,6 @@
   max-width: 210px;
   min-width: 210px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.group-name {
-  font-family: 'Kentledge';
-  text-decoration: none;
-  padding-top: 2px;
-  color: black;
 }
 
 .group-name:hover {
@@ -93,4 +86,31 @@
   padding-bottom: 6px;
   font-size: 20px;
   color: #fe5055;
+}
+
+.group-location-index {
+  font-weight: bolder;
+  color: black;
+  font-family: 'Neucha', cursive;
+  padding-top: 4px;
+}
+
+.group-category-index {
+  font-size: 20px;
+  padding-top: 4px;
+}
+
+.group-about-index {
+  font-size: 14px;
+  padding: 4px 0px 8px 0px;
+}
+
+
+.group-name {
+  font-weight: bolder;
+  color: #7f0924;
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+  padding-top: 2px;
+  font-size: 24px;
 }

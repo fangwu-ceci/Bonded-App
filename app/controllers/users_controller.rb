@@ -44,8 +44,8 @@ class UsersController < ApplicationController
   def update
     if @user.update(user_params)
       redirect_to @user, notice: 'Profile was successfuly updated.'
+    end
   end
-end
 
   private
 

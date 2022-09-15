@@ -1,26 +1,11 @@
+<div class="user-show-container">
+  <div class="user-show-content">
+    <div class="group-profile">
+      <div class="card user-profile-card-background">
 
-<div class="container group-show-content row d-flex">
-  <div class="group-show-btn-row row">
-    <div class="col-12 col-sm-2 .group-show-btn">
-      <%= link_to "Back to groups", groups_path, class: "btn group-show-btn-content btn-sm btn-block" %>
-      <%= simple_form_for [@group, @user_group] do |f| %>
-        <%= f.button :submit %>
-      <% end %>
-      <%= current_user.id %>
-      <%# <a href="" class="btn group-show-btn-content btn-sm btn-block">Events group</a> %>
-    </div>
+        <img src="<%= @group.image_url %>">
 
-
-<div class="d-flex justify-content-between">
-  <div class="d-flex group-show-content">
-    <div class="group-show-card-content col-12 col-sm-4">
-      <div class="group-profile d-flex">
-        <div class="card">
-          <img src="<%= @group.image_url %>">
-        </div>
-
-        <div class="card">
-          <h3 class="group-card-name"><%= @group.name %></h3>
+        <h3 class="group-show-name-card"><%= @group.name %></h3>
         <div class="user-info">
           <p><%= @group.category %></p>
           <p><i class="map-dot-show fa-solid fa-location-dot"></i><%= @group.location %></p>
@@ -30,61 +15,63 @@
           <p class="group-show-about"><%= @group.about %></p>
         </div>
 
-        <a href="" class="btn join-btn btn-sm btn-block">Join this group</a>
+        <%= simple_form_for [@group, @user_group] do |f| %>
+        <%= submit_tag "Join this group", class: "btn join-btn" %>
+        <% end %>
+
+
 
         <div class="user-socials">
-          <i id= "group-socials" class="fa-brands fa-facebook"></i>
-          <i id= "group-socials" class="fa-brands fa-instagram"></i>
-          <i id= "group-socials" class="fa-brands fa-twitter"></i>
+          <i id= "group-show-socials" class="fa-brands fa-facebook"></i>
+          <i id= "group-show-socials" class="fa-brands fa-instagram"></i>
+          <i id= "group-show-socials" class="fa-brands fa-twitter"></i>
         </div>
 
       </div>
     </div>
-  </div>
 
-    <div class="col-12 col-sm-8" style="width: 100%; height: 300px;">
-      <div>
-        <div class= "group-show-map" style="width: 550px; height: 300px;"
-            data-controller="map"
-            data-map-markers-value="<%= @markers.to_json %>"
-            data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-        </div>
 
+    <div class="map-container-show"style="width: 100%; height: 300px;">
+      <div class= "group-show-map" style="width: 500px; height: 255px;"
+        data-controller="map"
+        data-map-markers-value="<%= @markers.to_json %>"
+        data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
 
-    </div>
-
-  </div>
-</div>
-  <div class="row">
-    <div class="col-12 col-sm-10 text-center discussion-container">
-      <div class="discussion-card">
-        <% @group.posts.each do |post| %>
-        <div class="discussion-card-title">
-          <div class="card-title-item ">
-            <%= image_tag post.user.avatar_url, class:"avatar" %>
-          </div>
-          <div class="card-title-item">
-            <p class="text-xl-left fw-bold"> <%= post.user.nickname %> </p>
-          </div>
-          <div class="card-title-item">
-            <p class="text-xl-left"> <%= post.created_at %></p>
-          </div>
-        </div>
-          <div class="discussion-card-content">
-            <p class="text-md-left"> <%= post.content %></p>
-          </div>
-        <% end %>
-        <h4 id="first-name">Post Your Comments</h4>
-          <%= simple_form_for([@group, @post]) do |f| %>
-            <%= f.input :content, label: false, wrapper_html: { class: "" }%>
-            <%= f.button :submit, class: "join-btn"%>
+      <div class="members-container">
+        <h3 class="members">Members</h3>
+          <% @group.user_groups.map do |user_group| %>
+          <%= link_to (image_tag user_group.user.avatar_url, class: "group-show-avatar"), user_path(user_group.user) %>
           <% end %>
       </div>
     </div>
-    <div class="col-12 col-sm-2">
-      <h3 class="members">Members ( )</h3>
-        <%@group.user_groups.map do |user_group| %>
-        <%= link_to (image_tag user_group.user.avatar_url, class: "group-show-avatar"), user_path(user_group.user) %>
-        <% end %>
+  </div>
+
+</div>
+
+  <div class="text-center discussion-container">
+    <div class="discussion-card">
+      <% @group.posts.each do |post| %>
+      <div class="discussion-card-title">
+        <div class="card-title-item ">
+          <%= image_tag post.user.avatar_url, class:"avatar" %>
+        </div>
+        <div class="card-title-item">
+          <p class="text-xl-left fw-bold"> <%= post.user.nickname %> </p>
+        </div>
+        <div class="card-title-item">
+          <p class="text-xl-left"> <%= post.created_at %></p>
+        </div>
+      </div>
+      <div class="discussion-card-content">
+        <p class="text-md-left"> <%= post.content %></p>
+      </div>
+      <% end %>
+      <h4 id="group-name">Post Your Comments</h4>
+      <%= simple_form_for([@group, @post]) do |f| %>
+      <%= f.input :content, label: false, wrapper_html: { class: "" }%>
+      <%= f.button :submit, class: "join-btn"%>
+      <% end %>
+
     </div>
+  </div>
