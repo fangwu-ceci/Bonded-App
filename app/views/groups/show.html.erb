@@ -1,4 +1,3 @@
-<div class="user-show-container">
   <div class="user-show-content">
     <div class="group-profile">
       <div class="card user-profile-card-background">
@@ -39,7 +38,7 @@
       </div>
 
       <div class="members-container">
-        <h3 class="members">Members</h3>
+        <h3 class="members">Members</h3><hr class="members-divider">
           <% @group.user_groups.map do |user_group| %>
           <%= link_to (image_tag user_group.user.avatar_url, class: "group-show-avatar"), user_path(user_group.user) %>
           <% end %>
@@ -47,7 +46,7 @@
     </div>
   </div>
 
-</div>
+
 
   <div class="text-center discussion-container">
     <div class="discussion-card">
