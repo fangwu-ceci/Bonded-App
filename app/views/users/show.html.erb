@@ -3,7 +3,7 @@
     <div class="user-profile">
       <div class="card user-profile-card-background">
         <img src="<%= @user.avatar_url %>">
-        <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
+        <%# <%= cl_image_tag @user.photo.key, height: 300, width: 400, crop: :fill %>
         <%= simple_form_for(@user) do |f| %>
         <%= f.input :photo, as: :file %>
         <%= f.button :submit %>
@@ -41,7 +41,7 @@
           <% @user_groups.each do |user_group| %>
             <div class="single-group-card">
               <%= image_tag(user_group.group.image_url, height: "80", style:"border-radius: 10px;") %>
-              <%= link_to group_path(@group) do %>
+              <%= link_to group_path(user_group.group) do %>
                 <p class="user-show-group-name"><strong><%= user_group.group.name %></strong></p>
                 <p class="user-show-group-location"><strong><%= user_group.group.location %></strong></p>
               <% end %>

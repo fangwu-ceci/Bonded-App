@@ -19,7 +19,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @group = Group.find(params[:id])
     @markers = [
       {
         lat: @user.latitude,
@@ -38,15 +37,15 @@ class UsersController < ApplicationController
   def set_user
     @user = User.find(params[:id])
   end
-  
+
   def edit
   end
 
   def update
     if @user.update(user_params)
       redirect_to @user, notice: 'Profile was successfuly updated.'
+    end
   end
-end
 
   private
 
