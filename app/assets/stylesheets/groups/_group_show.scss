@@ -55,12 +55,9 @@
 }
 
 .group-show-avatar {
-  min-height: 55px;
-  max-height: 55px;
-  min-width: 55px;
-  max-width: 55px;
+  height: 72px;
+  width: 64px;
   border-radius: 50%;
-  border: white 2px solid;
   margin: 8px 0px 16px 24px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -91,7 +88,7 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 .discussion-card-title {
@@ -109,16 +106,15 @@ p {
 
 .created-at-show {
   color: gray;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .nickname-group-show {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .post-content-group-show {
-  font-size: 18px;
-  padding-bottom: 8px;
+  font-size: 14px;
 }
 
 .post-your-comments {
@@ -214,8 +210,8 @@ p {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 114px 50px 0px 0px;
-  height: 232px;
+  margin: 138px 50px 0px 0px;
+  height: 272px;
   background-color: white;
 }
 
@@ -230,7 +226,7 @@ p {
 }
 
 .members-divider {
-  color: black;
+  color: #7f0924;
   margin: 0px 24px 8px 24px;
   max-height: 2px;
   min-height: 2px;

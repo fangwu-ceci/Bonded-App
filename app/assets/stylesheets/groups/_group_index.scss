@@ -34,12 +34,13 @@
 
 
 .submit-btn-group {
-  background-color: white;
   border: 1px solid #fe5055;
   border-radius: 50px;
   color: #fe5055;
   font-family: 'Kentledge';
   margin-left: 8px;
+  margin-bottom: 16px;
+  background-color: rgba(248, 231, 233, 0.5);
 }
 
 .submit-btn-group:hover {
