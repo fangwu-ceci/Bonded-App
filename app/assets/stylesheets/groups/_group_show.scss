@@ -81,8 +81,9 @@ p {
 .discussion-card {
   background-color: white;
   border-radius: 5px;
-  margin: 8px 136px 8px 172px;
+  margin: 8px 32px 8px 64px;
   padding: 32px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -90,6 +91,7 @@ p {
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 32px;
 }
 
 .discussion-card-title {
@@ -120,13 +122,16 @@ p {
 }
 
 .post-your-comments {
-  margin: 40px 0px 16px 0px;
+  margin: 64px 0px 16px 0px;
+  font-weight: bolder;
 }
 
 
 .card-title-item:last-of-type {
   position: absolute;
   top: 24px;
+  width: 900px;
+  text-align: left;
 }
 
 .break {
@@ -155,8 +160,9 @@ p {
 
 .members {
   margin: 8px 0px 10px 24px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 32px;
+  font-family: 'Neucha', cursive;
+  color: #7f0924;
 }
 
 .group-show-map {
@@ -194,15 +200,16 @@ p {
 }
 
 .map-container-show {
-  margin-right: 64px;
+  margin: 64px 64px 0px 0px;
 }
 
 .members-container {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 146px 50px 0px 0px;
-  height: 264px;
+  margin: 114px 50px 0px 0px;
+  height: 232px;
+  background-color: white;
 }
 
 .group-show-name-card {

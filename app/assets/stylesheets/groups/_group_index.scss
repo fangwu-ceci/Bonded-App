@@ -1,9 +1,31 @@
+.group-container-show-index {
+  margin-top: 85px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgba(248, 231, 233, 0.5);
+  padding: 48px;
+  // width: 1050px;
+  // width: 100%;
+  // height: 100%;
+}
+
+.heading {
+  padding-top: 8px;
+  padding-bottom: 32px;
+  font-family: 'Neucha', cursive;
+  color: #7f0924;
+  font-size: 50px;
+}
+
 .dropdown {
   background-color: #fe5055;
   border-radius: 50px;
   color: #fbecea;
   font-family: 'Kentledge';
   margin-left: 8px;
+  margin-bottom: 16px;
 }
 
 .dropdown:hover {
@@ -32,7 +54,7 @@
 
 .group-card {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   text-decoration: none;
 }
 
@@ -40,12 +62,6 @@
   padding-left: 48px;
   font-family: 'Neucha', cursive;
   text-decoration: none;
-  font-family: 'Kentledge';
-}
-
-.heading {
-  padding-top: 64px;
-  padding-bottom: 32px;
   font-family: 'Kentledge';
 }
 
@@ -72,7 +88,8 @@
 
 .style-divider {
   color: #0000008c;
-  max-width: 900px;
+  margin: 24px 0px 24px 0px;
+  max-width: 1020px;
 }
 
 .group-text-about {
@@ -96,8 +113,8 @@
 }
 
 .group-category-index {
-  font-size: 20px;
-  padding-top: 4px;
+  font-size: 14px;
+  color: grey;
 }
 
 .group-about-index {
