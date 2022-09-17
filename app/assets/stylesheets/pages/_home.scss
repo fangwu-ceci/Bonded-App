@@ -151,11 +151,12 @@ h2 {
   /*This part is important for centering*/
   display: flex;
   place-items: baseline;
-  margin: 50px 263px;
+  margin: 50px auto;
+  justify-content: center;
 }
 
 .typing-text {
-  width: 59ch;
+  width: 800px;
   animation: typing 2.2s steps(30), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
