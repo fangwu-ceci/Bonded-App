@@ -8,11 +8,13 @@ class UsersController < ApplicationController
     if params[:commit] && (!params[:min_age].present? || !params[:max_age].present? || !params[:location].present? || !params[:gender].present?)
       flash[:alert] = "Use the filters to search"
       @users = User.all
+      # method that filters user array - current user id
     elsif params[:min_age].present?
       sql_query = "location ILIKE ? AND gender = ? AND age BETWEEN ? AND ?", "%#{location}%", "#{gender}", min_age, max_age
       @users = User.where(sql_query)
     else
       @users = User.all
+      # logic here
     end
     # @users = User.search(location, min_age, max_age, gender).order("created_at ASC")
   end
@@ -33,6 +35,8 @@ class UsersController < ApplicationController
   end
 
   private
+
+  # remove current user
 
   def set_user
     @user = User.find(params[:id])

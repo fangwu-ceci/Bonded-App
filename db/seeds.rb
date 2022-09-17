@@ -32,32 +32,32 @@ Group.destroy_all
 puts "creating users..."
 
 user1 = User.create!(first_name: "Gemma", last_name: "Smith", nickname: "Gem", gender: "Female", age: 30, location: "London", email: "gemma@smith.com", password: "123456",
-  about: " Just moved to London from HongKong for work. I work in the city and live near Islington. I love a stroll, a beach, rock music, good food and good movies. Keen to meet more like-minded individuals and find a cool local community.",
+  about: " Just moved to London from Hong Kong for work. I work in the city and live near Islington. I love a stroll, a beach, rock music, good food and movies. Keen to meet more like-minded individuals and find a cool local community.",
   avatar_url: "https://thekit.ca/wp-content/uploads/2020/11/thekitca-Gemma-Chan-feature-1200x1445.jpg")
   user1.photo.attac
 user2 = User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen", gender: "Female", age: age.sample, location: uk_cities.sample, email: "jen@johnson.com", password: "123456",
-  about: "Have been working in the creative industry for some time, I have developed a strong interest in art and music. Want to find some cool friends to checkout new art exhibitions and cool gigs in town. I am also very passionate about empowering women and would like to find other wonder-women to change the world together. ",
+  about: "I've been working in the creative industry for some time, I have developed a strong interest in art and music. Looking to find some cool friends to checkout new art exhibitions and cool gigs in town. I'm also very passionate about empowering women and would like to find other wonder-women to change the world together. ",
   avatar_url: "https://external-preview.redd.it/gyrwQ5fIJ_bI9xUUxSbKSwnmO6TqsJRVevCfsborcwg.jpg?auto=webp&s=d0752e8650570ae74ba9775088b4da1de6a78ccf")
 user3 = User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", gender: "Female", age: age.sample, location: uk_cities.sample, email: "alice@brown.com", password: "123456",
   about: "I’m always up for long walks in nature, or driving the scenic route. I write articles, take photographs and sing in the car…badly. I want to know what you’re into…what’s your motivation? There was no uncomplicated option for ‘have a kid’, but I have a kid (and she’s really cool).",
   avatar_url: "https://s1.r29static.com/bin/entry/ebe/x,80/2238977/image.jpg")
 user4 = User.create!(first_name: "Amy", last_name: "Jones", nickname: "Amy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "amy@jones.com", password: "123456",
-  about: "I am a freelance writer. I love travelling and writing stories. I have been to over 30 countries and 200 cities. I'd like to find like- minded friends to travel together. My next destination is Argentina. I prefer mountains over beaches.",
+  about: "I am a freelance writer. I love travelling and writing stories. I have been to over 30 countries and 200 cities. I'd like to find like-minded friends to travel together. My next destination is Argentina. I prefer mountains over beaches.",
   avatar_url: "https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHdvbWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80")
 user5 = User.create!(first_name: "Nicolas", last_name: "Johnson", nickname: "Nick", gender: "Male", age: age.sample, location: uk_cities.sample, email: "nick@johnson.com", password: "123456",
-  about: "New to the city, looking to meet locals to do sports with, i.e. tennis, rugy and climbing. I am currently a member of a local tennis club and would love to find a mate nearby to practice tennis together! ",
+  about: "New to the city, looking to meet locals to do sports with, including tennis, rugy and climbing. I am currently a member of a local tennis club and would love to find a mate nearby to practice tennis together! ",
   avatar_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNaYOi9t0p-e4F4MdibsUHgH1dbUELmzAmWw&usqp=CAU")
 user6 = User.create!(first_name: "Jennifer", last_name: "Smith", nickname: "Jenny", gender: "Female", age: 29, location: "London", email: "jenny@smith.com", password: "123456",
-  about: "Originally from US, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
+  about: "Originally from the US, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
   avatar_url:"https://i.pinimg.com/474x/98/0a/75/980a758e6596aec603f9d631716a2ad7--women-hair-styles-ferris-bueller.jpg")
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "Female", age: age.sample, location: uk_cities.sample, email: "emma@baker.com", password: "123456",
-  about: "Keen traveller and explorer, want to find some nice friends to enjoy this beautiful city with. Also looking for a fitness buddy to join some classes together i.e. yoga, climbing, spinning. Would prefer to meet friends who live local to me.",
+  about: "Keen traveller and explorer, want to find some nice friends to enjoy this beautiful city with. Also looking for a fitness buddy to join some classes together e.g. yoga, climbing, spinning. Would prefer to meet friends who live local to me.",
   avatar_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Gal_Gadot_by_Gage_Skidmore_2.jpg/1200px-Gal_Gadot_by_Gage_Skidmore_2.jpg")
 user8 = User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "lizzy@taylor.com", password: "123456",
   about: "I am a passionate baker. I love baking lots of cakes in my spare time and would love to find a friend to bake cakes with. Next cake on my list to bake is Japanese cheesecake. Any tips would be appreciated :)",
   avatar_url: "https://cellularnews.com/wp-content/uploads/2020/06/15-dua-lipa-in-a-pale-pink-suit-325x485.jpg")
 user9 = User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "Male", age: age.sample, location: uk_cities.sample, email: "oliver@jones.com", password: "123456",
-  about: "Expanding my social circle, meeting like-minded frineds to check out new foodie haunts and do more activities together.  I love Italian, Spanish and French food and have a long list of restaurants to try. If you are a foodie, let's check out some of these restaurants together. ",
+  about: "Expanding my social circle, meeting like-minded friends to check out new foodie haunts and do more activities together.  I love Italian, Spanish and French food and have a long list of restaurants to try out. If you're a foodie, I'd love to check out some of these restaurants together!",
   avatar_url:"https://imgix.bustle.com/wmag/2017/08/30/59a6e0083a380e37daab7eb8_1017.flip_.royal_.ms_.royals.lo2_.jpg?w=414&h=538&fit=crop&crop=faces&auto=format%2Ccompress")
 
 puts "creating chatroom"
