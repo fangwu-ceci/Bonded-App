@@ -43,6 +43,17 @@
   color: #fe5055;;
 }
 
+.post-btn {
+  background-color: #fe5055;
+  border-radius: 50px;
+  color: #fbecea;
+  margin-bottom: 16px 0px 16px 0px;
+}
+
+.post-btn:hover {
+  color: #fe5055;;
+}
+
 .group-show-avatar {
   min-height: 55px;
   max-height: 55px;
@@ -50,7 +61,7 @@
   max-width: 55px;
   border-radius: 50%;
   border: white 2px solid;
-  margin: 2px 0px 8px 16px;
+  margin: 8px 0px 16px 24px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -70,13 +81,23 @@ p {
 .discussion-card {
   background-color: white;
   border-radius: 5px;
-  margin: 8px 64px 8px 64px;
+  margin: 8px 136px 8px 172px;
   padding: 32px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.card-title-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .discussion-card-title {
   display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 50px;
 }
 
 .card-title-item {
@@ -84,10 +105,39 @@ p {
   margin-top: 5px;
 }
 
+.created-at-show {
+  color: gray;
+  font-size: 14px;
+}
+
+.nickname-group-show {
+  font-size: 14px;
+}
+
+.post-content-group-show {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.post-your-comments {
+  margin: 40px 0px 16px 0px;
+}
+
+
+.card-title-item:last-of-type {
+  position: absolute;
+  top: 24px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .discussion-card-content {
-  margin-left: 10px;
+  margin: 0px 0px 32px 64px;
   text-align: left;
-  padding: 5px;
+  padding: 8px;
 }
 
 .discussion-container {
@@ -99,17 +149,19 @@ p {
   margin-top: 120px;
 }
 
+.group-name {
+  margin-top: 30px;
+}
+
 .members {
-  color: black;
-  font-family: 'Kentledge';
-  margin: 8px 0px 10px 16px;
+  margin: 8px 0px 10px 24px;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .group-show-map {
   border-radius: 20px;
-  margin: 50px 50px 0px 0px;
+  margin: 40px 50px 0px 0px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -131,9 +183,9 @@ p {
 
 .map-dot-show {
   font-size: 16px;
-  padding-right: 4px;
   padding-top: 4px;
   color: #fe5055;
+  margin: 1px 6px 0px 0px;
   /* color: white; */
   /* text-shadow: -1px 1px 0 #0000008c,
   1px 1px 0 #0000008c,
@@ -149,7 +201,8 @@ p {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 50px 50px 0px 0px;
+  margin: 146px 50px 0px 0px;
+  height: 264px;
 }
 
 .group-show-name-card {
@@ -164,7 +217,8 @@ p {
 
 .members-divider {
   color: black;
-  margin: 0px 48px 4px 8px;
-  border-top: 2px solid;
+  margin: 0px 24px 8px 24px;
+  max-height: 2px;
+  min-height: 2px;
   border-radius: 2px;
 }
