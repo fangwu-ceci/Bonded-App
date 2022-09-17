@@ -1,21 +1,25 @@
 <div class="user-container">
   <div class="user-index-cards-header">
-    <h2 class="user-index-cards-header-h2 ">
-      Start meeting new people<br>in your area!
+    <h2 class="user-index-cards-header-h2">
+      Start bonding with new people<br>in your area!
     </h2>
   </div>
   <div class="user-index-cards-body-wrapper d-flex row justify-content-center">
     <div class="user-index-cards-search-body">
-      <p class="user-index-cards-header-p">
-        1. Filter by location, age, gender
-        2. Select your bond
-        3. Send them a message!
+    <div class="user-index-steps">
+      <i class="fa-solid fa-circle-arrow-right"></i>
+      <p id="step-1">Filter by location, age, gender</p>
+      <i class="fa-solid fa-circle-arrow-right"></i>
+      <p id="step-2">Select your bond</p>
+      <i class="fa-solid fa-circle-arrow-right"></i>
+      <p id="step-3">Send them a message!</p>
       </p>
+    </div>
       <%= form_tag(users_path, :method => "get", id: "user-search-form") do %>
         <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
-        params[:location]), prompt: 'Location', class: 'dropdown btn' %>
-        <%= select_tag :min_age, options_for_select(18..65), prompt: 'Min age', class: 'dropdown btn' %>
-        <%= select_tag :max_age, options_for_select(18..65), prompt: 'Max age', class: 'dropdown btn' %>
+        params[:location]), prompt: 'Location', class: 'dropdown btn ' %>
+        <%= select_tag :min_age, options_for_select(18..65, params[:min_age]), prompt: 'Min age', class: 'dropdown btn' %>
+        <%= select_tag :max_age, options_for_select(18..65, params[:max_age]), prompt: 'Max age', class: 'dropdown btn' %>
         <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Gender', class: 'dropdown btn' %>
         <%= submit_tag "Search", class: 'btn btn-info' %>
       <% end %>
@@ -23,9 +27,8 @@
     <div class="user-index-card row g-3">
       <% @users.each do |user| %>
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <%= link_to user_path(user), class: "text-decoration-none text-dark" do %>
             <div class="user-index-cards ">
-              <div class="user-index-indiv-card" style="background-color :white">
+              <div class="user-index-indiv-card">
               <div class="user-index-indiv-card-top">
                 <div class="user-index-indiv-card-avatar">
                   <%# <% if user.photo.attached?  %>
@@ -59,7 +62,6 @@
                </div>
               </div>
             </div>
-          <% end %>
         </div>
       <% end %>
     </div>

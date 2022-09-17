@@ -36,6 +36,7 @@
       // width: 200px;
       height: 300px;
       object-fit: cover;
+      // object-fit: contain;
       border-radius: 10px;
       margin-left: auto;
       margin-right: auto;
@@ -91,6 +92,10 @@ p {
   border: 3px solid #fe5055;
 }
 
+.empty-div{
+  height: 90px;
+}
+
 .user-container {
   margin-top: 85px;
   margin-left: 60px;
@@ -124,6 +129,9 @@ p {
   // margin-bottom: 40px;
   max-width: 100%;
   max-height: 90px;
+
+  // height: 90px;
+  // overflow: scroll;
 }
 
 .user-show-groups {
@@ -135,6 +143,7 @@ p {
   height: 356px;
   margin: 0px 100px;
   // position: relative;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .user-show-group-card {
@@ -161,7 +170,8 @@ p {
 .single-group-card {
   display: flex;
   margin: 8px 26px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.5);
+  background-color: rgba(248, 231, 233, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
