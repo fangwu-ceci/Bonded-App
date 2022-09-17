@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   padding: 40px;
-  padding-top: 65px;
+  // padding-top: 65px;
 }
 
 .user-index-cards-header-p {
@@ -120,7 +120,7 @@
   align-items: center;
   justify-content: center;
   // width:100%;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 15px;
   #location {
     background-color: white;
@@ -217,4 +217,16 @@
     font-size: 25px;
     color: #fe5055;
   }
+}
+
+.index-search-btn {
+  font-size: 15px;
+  margin: 10px;
+  padding: 4px 20px;
+  border-radius: 100px;
+  background-color: #fe5055;
+  border: 3px solid #fe5055;
+  border-radius: 50px;
+  transition: all .15s ease-in-out;
+  color: #fff;
 }
