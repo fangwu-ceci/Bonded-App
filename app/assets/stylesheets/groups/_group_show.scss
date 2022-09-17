@@ -1,15 +1,17 @@
 .group-profile {
-  padding-top: 10px;
-  margin: 0px 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px 108px 20px 148px;
+
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     // max-width: 300px;
-    width: 370px;
+    width: 600px;
     // height: 600px;
-    margin-left: 16px;
+    margin: auto;
     padding: 20px 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
     img {
       width: 100%;
       // width: 200px;
@@ -48,11 +50,10 @@
   max-width: 55px;
   border-radius: 50%;
   border: white 2px solid;
-  margin-left: 1px;
-  margin-top: 2px;
-  margin-bottom: 8px;
+  margin: 2px 0px 8px 16px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 h2  {
   margin:0;
   padding: 10px;
@@ -69,8 +70,7 @@ p {
 .discussion-card {
   background-color: white;
   border-radius: 5px;
-  margin-right: 10px;
-  margin-left: 32px;
+  margin: 8px 64px 8px 64px;
   padding: 32px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -100,24 +100,24 @@ p {
 }
 
 .members {
+  color: black;
   font-family: 'Kentledge';
+  margin: 8px 0px 10px 16px;
+  font-size: 24px;
   font-weight: bolder;
-  margin: 10px 0px;
-  padding-top: 32px;
-  font-size: 20px;
 }
 
 .group-show-map {
   border-radius: 20px;
-  margin-top: 24px;
-  padding-left: 64px;
+  margin: 50px 50px 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .group-show-about {
   font-size: 12px;
 }
 
-#group-socials:hover {
+#group-show-socials:hover {
   color: #fe5055;
 }
 
@@ -139,4 +139,32 @@ p {
   1px 1px 0 #0000008c,
   1px -1px 0 #0000008c,
   -1px -1px 0 #0000008c;  to make white with black border */
+}
+
+.map-container-show {
+  margin-right: 64px;
+}
+
+.members-container {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 50px 50px 0px 0px;
+}
+
+.group-show-name-card {
+  font-weight: bolder;
+  color: black;
+  margin: 20px;
+  font-family: 'Kentledge';
+  font-size: 34px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.members-divider {
+  color: black;
+  margin: 0px 48px 4px 8px;
+  border-top: 2px solid;
+  border-radius: 2px;
 }

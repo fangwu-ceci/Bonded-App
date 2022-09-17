@@ -45,11 +45,11 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def update
-    if @user.update(user_params)
-      redirect_to @user, notice: 'Profile was successfuly updated.'
-  end
-end
+  # def update
+  #   if @user.update(user_params)
+  #     redirect_to @user, notice: 'Profile was successfuly updated.'
+  #   end
+  # end
 
   private
 
