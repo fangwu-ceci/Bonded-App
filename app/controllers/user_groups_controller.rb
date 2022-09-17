@@ -1,9 +1,10 @@
 class UserGroupsController < ApplicationController
   def create
-    @user_group = UserGroup.new
     @group = Group.find(params[:group_id])
-    @user_group.group = @group
-    @user_group.user = current_user
+    @user_group = UserGroup.create!(group: @group, user: current_user)
+    # @user_group.group = @group
+    # @user_group.user = current_user
+    # @user_group.save! # save permanently
     if @user_group.save
       redirect_to group_path(@group)
     else

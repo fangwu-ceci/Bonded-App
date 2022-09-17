@@ -196,7 +196,14 @@ p {
 }
 
 .map-container-show {
-  margin: 0px 64px 0px 0px;
+  // margin-right: 64px;
+  /* width: 100%; */
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  // margin: auto 0;
+  min-height: 630px;
 }
 
 .members-container {
