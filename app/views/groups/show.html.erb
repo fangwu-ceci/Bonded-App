@@ -1,3 +1,4 @@
+<div class="group-container-show-index">
   <div class="user-show-content">
     <div class="group-profile">
       <div class="card user-profile-card-background">
@@ -51,26 +52,34 @@
   <div class="text-center discussion-container">
     <div class="discussion-card">
       <% @group.posts.each do |post| %>
-      <div class="discussion-card-title">
+
+      <div class="card-title-container">
         <div class="card-title-item ">
           <%= image_tag post.user.avatar_url, class:"avatar" %>
         </div>
-        <div class="card-title-item">
-          <p class="text-xl-left fw-bold"> <%= post.user.nickname %> </p>
+        <div class="nickname-group-show discussion-card-title">
+          <div class="card-title-item">
+            <p class="text-xl-left fw-bold"> <%= post.user.nickname %> </p>
+          </div>
+
+          <div class="created-at-show card-title-item">
+            <p class="text-xl-left"> <%= post.created_at %></p>
+          </div>
+
+          <div class="break"></div>
+
+          <div class="card-title-item">
+            <p class="post-content-group-show text-md-left"> <%= post.content %></p>
+          </div>
         </div>
-        <div class="card-title-item">
-          <p class="text-xl-left"> <%= post.created_at %></p>
-        </div>
-      </div>
-      <div class="discussion-card-content">
-        <p class="text-md-left"> <%= post.content %></p>
       </div>
       <% end %>
-      <h4 id="group-name">Post Your Comments</h4>
+      <h4 class="post-your-comments">Post Your Comments</h4>
       <%= simple_form_for([@group, @post]) do |f| %>
       <%= f.input :content, label: false, wrapper_html: { class: "" }%>
-      <%= f.button :submit, class: "join-btn"%>
+      <%= submit_tag "Post", class: "post-btn btn" %>
       <% end %>
 
     </div>
   </div>
+</div>

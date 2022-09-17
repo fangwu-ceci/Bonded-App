@@ -164,7 +164,7 @@
   margin-right: 20px;
 }
 
-.fa-location-dot{
+.map-dot-users{
   margin-right: 20px;
 }
 
@@ -221,8 +221,9 @@
 
 .index-search-btn {
   font-size: 15px;
-  margin: 10px;
-  padding: 4px 20px;
+  margin: 0 8px;
+  margin-bottom: 16px;
+  padding: 3px 20px;
   border-radius: 100px;
   background-color: #fe5055;
   border: 3px solid #fe5055;
@@ -230,3 +231,15 @@
   transition: all .15s ease-in-out;
   color: #fff;
 }
+
+
+// font-size: 15px;
+//     margin: 0 8px;
+//     margin-bottom: 16px;
+//     padding: 3px 20px;
+//     border-radius: 100px;
+//     background-color: #fe5055;
+//     border: 3px solid #fe5055;
+//     border-radius: 50px;
+//     transition: all .15s ease-in-out;
+//     color: #fff;
