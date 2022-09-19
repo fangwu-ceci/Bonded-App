@@ -1,12 +1,9 @@
 .group-container-show-index {
-  margin-top: 85px;
-  margin-left: 264px;
-  margin-right: 60px;
+  margin: 85px 112px 0px 112px;
   border-radius: 25px;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   background-color: rgba(248, 231, 233, 0.5);
-  padding: 48px;
-  width: 1020px;
+  padding: 24px 112px 48px 112px;
 }
 
 .heading {
@@ -101,22 +98,24 @@
   font-weight: bolder;
   color: black;
   font-family: 'Neucha', cursive;
-  padding-top: 4px;
+  font-weight: light;
+  font-size: 20px;
 }
 
 .group-category-index {
-  font-size: 14px;
+  font-size: 18px;
   color: grey;
+  padding-bottom: 20px;
 }
 
 .group-about-index {
-  font-size: 14px;
-  padding: 4px 0px 8px 0px;
+  padding: 0px 0px 8px 0px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  height: 50px;
+  height: 36px;
+  font-size: 12px;
 }
 
 
@@ -125,13 +124,12 @@
   color: #7f0924;
   font-family: 'Neucha', cursive;
   text-decoration: none;
-  padding-top: 2px;
   font-size: 24px;
 }
 
 .group-index-divider {
   color: #7f0924;
-  margin: 24px;
+  margin: 12px 20px 20px 20px;
   max-height: 2px;
   min-height: 2px;
   border-radius: 2px;
