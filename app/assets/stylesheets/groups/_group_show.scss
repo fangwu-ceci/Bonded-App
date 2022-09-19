@@ -1,3 +1,13 @@
+.group-container-show-index-show {
+  margin-top: 85px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgba(248, 231, 233, 0.5);
+  padding: 48px 48px 48px 48px;
+}
+
 .group-profile {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -105,19 +115,20 @@ p {
 .card-title-item {
   margin-left: 10px;
   margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 .created-at-show {
   color: gray;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .nickname-group-show {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .post-content-group-show {
-  font-size: 18px;
+  font-size: 14px;
   padding-bottom: 8px;
 }
 
@@ -200,14 +211,14 @@ p {
 }
 
 .map-container-show {
-  margin: 64px 64px 0px 0px;
+  margin: 0px 64px 0px 0px;
 }
 
 .members-container {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  margin: 114px 50px 0px 0px;
+  margin: 178px 50px 0px 0px;
   height: 232px;
   background-color: white;
 }
@@ -223,7 +234,7 @@ p {
 }
 
 .members-divider {
-  color: black;
+  color: #7f0924;
   margin: 0px 24px 8px 24px;
   max-height: 2px;
   min-height: 2px;
