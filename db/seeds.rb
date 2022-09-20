@@ -9,8 +9,6 @@
 uk_cities = ["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading"];
 age = (24..35).to_a
 
-Post.delete_all
-
 puts "deleting all user groups..."
 UserGroup.destroy_all
 
@@ -23,11 +21,11 @@ Message.destroy_all
 puts "deleting all chatrooms..."
 Chatroom.destroy_all
 
-puts "deleting all users..."
-User.destroy_all
-
 puts "deleting all groups..."
 Group.destroy_all
+
+puts "deleting all users..."
+User.destroy_all
 
 puts "creating users..."
 
@@ -193,7 +191,6 @@ UserGroup.create!(user_id: user5.id, group_id: group4.id)
 UserGroup.create!(user_id: user8.id, group_id: group5.id)
 UserGroup.create!(user_id: user3.id, group_id: group5.id)
 UserGroup.create!(user_id: user4.id, group_id: group5.id)
-UserGroup.create!(user_id: user8.id, group_id: group5.id)
 
 UserGroup.create!(user_id: user1.id, group_id: group6.id)
 UserGroup.create!(user_id: user7.id, group_id: group6.id)
