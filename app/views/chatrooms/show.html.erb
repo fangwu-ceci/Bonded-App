@@ -15,12 +15,18 @@
        },
       class: "d-flex" } do |f|
   %>
-  <%= f.input :content,
-    label: false,
-    placeholder: "Message #{@chatroom.name}",
-    wrapper_html: {class: "flex-grow-1"}
-    %>
-    <%= f.submit "Send", class: "send-msg-btn" %>
-  <% end %>
+  <div class="message-type">
+    <div class="message-box">
+      <%= f.input :content,
+        label: false,
+        placeholder: "Message #{@chatroom.name}",
+        wrapper_html: {class: "me-3"}
+      %>
+    </div>
+    <div class="msg-send-btn">
+      <%= f.submit "Send", class: "send-msg-btn" %>
+    </div>
+    <% end %>
+  </div>
   <%# <%= button_to "Back to user profile", user_path, :method => "get", class: "btn btn-primary mb-3" %>
 </div>

@@ -2,7 +2,7 @@
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.7);
   margin-top: 108px;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 125px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +40,7 @@
   }
 
   .form-control {
-    padding: 15px;
+    padding: 12px;
     width: 95%;
     border-radius: 20px;
   }
@@ -69,4 +69,20 @@
     // transition: all .15s ease-in-out;
     color: #fff;
   }
+}
+
+.message-type {
+  display: flex;
+  width: 100vw;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.message-box {
+  width: 73vw;
+}
+
+.msg-send-btn {
+  padding-top: 11px;
+  align-content: center;
 }
