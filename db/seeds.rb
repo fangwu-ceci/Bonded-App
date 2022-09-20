@@ -191,7 +191,6 @@ UserGroup.create!(user_id: user5.id, group_id: group4.id)
 UserGroup.create!(user_id: user8.id, group_id: group5.id)
 UserGroup.create!(user_id: user3.id, group_id: group5.id)
 UserGroup.create!(user_id: user4.id, group_id: group5.id)
-UserGroup.create!(user_id: user8.id, group_id: group5.id)
 
 UserGroup.create!(user_id: user1.id, group_id: group6.id)
 UserGroup.create!(user_id: user7.id, group_id: group6.id)
