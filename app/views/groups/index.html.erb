@@ -1,6 +1,6 @@
 <div class="group-container-show-index container">
-  <div class="heading">
-    <h2>There are <%= @groups.count %> groups near you</h2>
+  <div>
+    <h2 class="group-index-heading">There are <%= @groups.count %> groups near you</h2>
   </div>
 
   <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
@@ -8,7 +8,7 @@
         params[:location]), prompt: 'Any Location', class: 'dropdown btn' %>
     <%= select_tag :category, options_for_select(["Sport & Fitness", "Films", "Technology", "Pets & Animals", "Music", "Art & Culture", ],
         params[:category]), prompt: 'Any Category', class: 'dropdown btn' %>
-    <%= submit_tag "Search", class: "submit-btn-group btn" %>
+    <%= submit_tag "Search", class: "submit-btn-group" %>
   <% end %>
 
   <div class="group-cards-container">

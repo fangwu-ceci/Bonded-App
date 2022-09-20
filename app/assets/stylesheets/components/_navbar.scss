@@ -66,8 +66,17 @@
   font-size: 18px;
 }
 
-// .navbar-lewagon-sticky {
-//   position: fixed;
-//   top: 0;
-//   width: 100%
-// }
+.nav-item {
+    margin-bottom: 0px;
+}
+
+.avatar-dropdown {
+  font-size: 15px;
+  background-color: white;
+  // border: 2px solid #fe5055;
+  border-radius: 50px;
+  color: #fe5055;
+  font-family: 'Kentledge';
+  margin-left: 8px;
+  margin-bottom: 16px;
+}

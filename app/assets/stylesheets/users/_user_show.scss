@@ -62,9 +62,6 @@ p {
   .fa-twitter:hover {
     color: #fe5055;
   }
-  .fa-linkedin:hover {
-    color: #fe5055;
-  }
 }
 .user-info {
   display: flex;
@@ -101,6 +98,7 @@ p {
   margin-top: 85px;
   margin-left: 60px;
   margin-right: 60px;
+  // padding-bottom: 40px;
   border-radius: 25px;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   background-color: rgba(248, 231, 233, 0.5);
@@ -122,6 +120,7 @@ p {
   // padding-bottom: 16px;
   padding-bottom: 5px;
   font-size: 34px;
+  margin-top: 0px;
 }
 
 .user-show-about {

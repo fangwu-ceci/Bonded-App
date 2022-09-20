@@ -1,85 +1,73 @@
-<div class="group-container-show-index">
+<div class="user-container">
   <div class="user-show-content">
-    <div class="group-profile">
+    <div class="user-profile">
       <div class="card user-profile-card-background">
-
         <img src="<%= @group.image_url %>">
-
-        <h3 class="group-show-name-card"><%= @group.name %></h3>
-        <div class="user-info">
-          <p><%= @group.category %></p>
-          <p><i class="map-dot-show fa-solid fa-location-dot"></i><%= @group.location %></p>
-        </div>
-
+        <h3 class="group-name-card"><%= @group.name %></h3>
+        <%# <p>What we're about</p> %>
         <div>
           <p class="group-show-about"><%= @group.about %></p>
         </div>
-
         <%= simple_form_for [@group, @user_group] do |f| %>
-        <%= submit_tag "Join this group", class: "btn join-btn" %>
+        <%= submit_tag "Join group", class: "join-group-btn" %>
         <% end %>
-
-
-
-        <div class="user-socials">
-          <i id= "group-show-socials" class="fa-brands fa-facebook"></i>
+        <div class="group-socials">
+          <p>Share:</p>
+           <i class="fa-brands fa-facebook"></i>
           <i id= "group-show-socials" class="fa-brands fa-instagram"></i>
           <i id= "group-show-socials" class="fa-brands fa-twitter"></i>
         </div>
-
       </div>
     </div>
-
-
-    <div class="map-container-show"style="width: 100%;">
-      <div class= "group-show-map" style="width: 500px; height: 255px;"
+    <div class="user-other" style="width: 100%; height: 300px;">
+      <div class= "user-show-map" style="width: 500px; height: 255px;"
         data-controller="map"
         data-map-markers-value="<%= @markers.to_json %>"
         data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
-
-      <div class="members-container">
+      <div class="group-show-members">
         <h3 class="members">Members</h3><hr class="members-divider">
-          <% @group.user_groups.map do |user_group| %>
+        <%# <p>See all</p> %>
+        <% @group.user_groups.map do |user_group| %>
           <%= link_to (image_tag user_group.user.avatar_url, class: "group-show-avatar"), user_path(user_group.user) %>
-          <% end %>
+        <% end %>
       </div>
     </div>
   </div>
 
 
-
+  <h3 class="discussions-title">Discussions</h3>
   <div class="text-center discussion-container">
     <div class="discussion-card">
       <% @group.posts.each do |post| %>
-
-      <div class="card-title-container">
-        <div class="card-title-item ">
-          <%= image_tag post.user.avatar_url, class:"avatar" %>
+        <div class="card-title-container">
+          <div class="card-title-item ">
+            <%= image_tag post.user.avatar_url, class:"avatar" %>
+          </div>
+          <div class="nickname-group-show discussion-card-title">
+            <div class="member-name-created-at">
+              <div class="card-title-item">
+                <p class="nickname-discussion text-xl-left fw-bold"> <%= post.user.nickname %></p>
+              </div>
+              <div class="created-at-show card-title-item">
+                <p class="created-at-align text-xl-left"><%= post.created_at %></p>
+              </div>
+            </div>
+            <div class="break"></div>
+            <div class="card-title-item">
+              <p class="post-content-group-show text-md-left"><%= post.content %></p>
+            </div>
+          </div>
         </div>
-        <div class="nickname-group-show discussion-card-title">
-          <div class="card-title-item">
-            <p class="text-xl-left fw-bold"> <%= post.user.nickname %> </p>
-          </div>
-
-          <div class="created-at-show card-title-item">
-            <p class="text-xl-left"> <%= post.created_at %></p>
-          </div>
-
-          <div class="break"></div>
-
-          <div class="card-title-item">
-            <p class="post-content-group-show text-md-left"> <%= post.content %></p>
-          </div>
-        </div>
-      </div>
       <% end %>
-      <h4 class="post-your-comments">Post Your Comments</h4>
-      <%= simple_form_for([@group, @post]) do |f| %>
-      <%= f.input :content, label: false, wrapper_html: { class: "" }%>
-      <%= submit_tag "Post", class: "post-btn btn" %>
-      <% end %>
-
+    <%# <h4 class="post-your-comments">Post Your Comments</h4> %>
     </div>
+    <%= simple_form_for([@group, @post]) do |f| %>
+      <%= f.input :content, label: false, placeholder: "Write a comment", wrapper_html: { class: "" }%>
+      <%= submit_tag "Post", class: "post-btn btn" %>
+    <% end %>
   </div>
+
+
+
 </div>

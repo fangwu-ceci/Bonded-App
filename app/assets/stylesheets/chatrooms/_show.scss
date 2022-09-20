@@ -1,16 +1,27 @@
 .chatroom {
-  background: white;
-  margin-top: 9px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-top: 108px;
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
 
-  h1 {
-    border-bottom: 1px solid $gray-200;
-    margin-bottom: 0;
-    padding: 1rem;
+  // h1 {
+  //   border-bottom: 1px solid $gray-200;
+  //   margin-bottom: 0;
+  //   padding: 1rem;
+  // }
+
+  .h1-chatroom {
+    color: black;
+    margin: 25px 24px;
+    font-family: 'Kentledge';
+    font-size: 28px;
+    // font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 6px;
   }
 
   .messages {
@@ -29,22 +40,33 @@
   }
 
   .form-control {
-    padding: 30px;
-    width: 1000px;
+    padding: 15px;
+    width: 95%;
+    border-radius: 20px;
   }
 
   .send-msg-btn {
+    // font-size: 15px;
+    // margin: 20px 20px;
+    // // margin: 0px 100px;
+    // margin-right: 100px;
+    // padding: 10px 30px;
+    // border-radius: 100px;
+    // background-color: #fe5055;
+    // border: 3px solid #fe5055;
+    // border-radius: 50px;
+    // -webkit-transition: all .15s ease-in-out;
+    // transition: all .15s ease-in-out;
+    // color: #fff;
     font-size: 15px;
-    margin: 20px 20px;
-    // margin: 0px 100px;
-    margin-right: 100px;
-    padding: 10px 30px;
-    border-radius: 100px;
+    // margin: 0 8px;
+    // margin-bottom: 16px;
+    padding: 3px 20px;
+    // border-radius: 100px;
     background-color: #fe5055;
     border: 3px solid #fe5055;
     border-radius: 50px;
-    -webkit-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out;
+    // transition: all .15s ease-in-out;
     color: #fff;
   }
 }
