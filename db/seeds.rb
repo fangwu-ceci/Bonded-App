@@ -9,8 +9,6 @@
 uk_cities = ["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading"];
 age = (24..35).to_a
 
-Post.delete_all
-
 puts "deleting all user groups..."
 UserGroup.destroy_all
 
@@ -23,11 +21,11 @@ Message.destroy_all
 puts "deleting all chatrooms..."
 Chatroom.destroy_all
 
-puts "deleting all users..."
-User.destroy_all
-
 puts "deleting all groups..."
 Group.destroy_all
+
+puts "deleting all users..."
+User.destroy_all
 
 puts "creating users..."
 
