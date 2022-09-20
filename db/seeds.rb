@@ -95,8 +95,8 @@ group3 = Group.create!(
   image_url: "https://images.pexels.com/photos/7991119/pexels-photo-7991119.jpeg",
   name: "Movies for All",
   about: "Join to meet people and see movies!
-  It's really pretty basic; the organiser and assistant organisers pick films, we meet beforehand and generally go for a drink after. It's a relaxed group which people dip in and out of depending on their film genre preference etc, so there are always new people at each meet.
-  We're not film snobs in this group- we see both thoughtful, foreign language films at indie cinemas and 'leave your brain at home' Hollywood blockbusters at multiplexes. Personally it depends on my mood. So if you like films, come along, watch a film and discuss it over a drink.",
+  We pick a film, meet beforehand and generally go for a drink after. It's a relaxed group which people dip in and out of depending on their film genre preference etc, so there are always new people at each meet.
+  We show both thoughtful, foreign language films at indie cinemas and 'leave your brain at home' Hollywood blockbusters at multiplexes. So if you like films, come along, let's watch together and discuss over a drink.",
   location: "London",
   category: "Films"
 )
@@ -135,8 +135,8 @@ group6 = Group.create!(
 group7 = Group.create!(
   image_url: "https://images.pexels.com/photos/6173926/pexels-photo-6173926.jpeg",
   name: "Tara's Bluegrass Jam",
-  about: "If you are looking for some great music, to expand your music horizons, at an affordable price in a great venue, this is a group you should join!
-  The concerts run $10-$15 and refreshments are served afterwards for a chance to mingle.",
+  about: "If you're looking for some great music and expanding your music horizons at an affordable price in a great venue, this is a group you should join!
+  Concerts run £10-£15 and refreshments are served afterwards for a chance to mingle.",
   location: uk_cities.sample,
   category: "Music"
 )
@@ -146,7 +146,7 @@ group8 = Group.create!(
   name: "Arts at Night",
   about: "This is a group for people interested in the arts. We offer a variety of cultural experiences, some of which involve
   attending public events as a group including a series of art gallery tours in various neighborhoods, with exclusive talks by gallery owners
-  and staff, and sometimes the artists themselves; Classical music concerts and lectures, including chamber and piano recitals at discount prices",
+  and staff, and sometimes the artists themselves. Classical music concerts and lectures, including chamber and piano recitals at discount prices",
   location: uk_cities.sample,
   category: "Art & Culture"
   )
