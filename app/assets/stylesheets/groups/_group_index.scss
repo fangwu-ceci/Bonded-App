@@ -117,7 +117,7 @@ h2 {
   overflow: hidden;
   height: 50px;
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .group-name {
@@ -127,6 +127,10 @@ h2 {
   color: #7f0924;
   text-decoration: none;
   font-size: 24px;
+}
+
+.group-name:hover {
+  color: #fe5055;
 }
 
 .group-index-divider {
