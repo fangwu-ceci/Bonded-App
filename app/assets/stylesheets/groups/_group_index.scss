@@ -36,11 +36,11 @@ h2 {
   padding: 5px 20px;
   border: 2px solid #fe5055;
   border-radius: 50px;
-  color: #fe5055;
+  color: white;
   font-family: 'Kentledge';
   margin-left: 8px;
   margin-bottom: 16px;
-  background-color: rgba(248, 231, 233, 0.5);
+  background-color: #fe5055;
 }
 
 .submit-btn-group:hover {
@@ -106,7 +106,6 @@ h2 {
 .group-category-index {
   font-size: 18px;
   color: grey;
-  padding-bottom: 20px;
   font-family: 'Neucha', cursive;
 }
 
@@ -116,9 +115,9 @@ h2 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  height: 42px;
-  font-size: 14px;
-  margin-top: 32px;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 40px;
 }
 
 .group-name {
@@ -132,7 +131,7 @@ h2 {
 
 .group-index-divider {
   color: #7f0924;
-  margin: 24px 20px 24px 20px;
+  margin: 12px 20px 20px 20px;
   max-height: 2px;
   min-height: 2px;
   border-radius: 2px;
