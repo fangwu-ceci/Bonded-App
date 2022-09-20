@@ -1,10 +1,10 @@
 
 .group-container-show-index {
-  margin: 85px 112px 0px 112px;
+  margin: 85px 60px 0px 60px;
   border-radius: 25px;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2);
   background-color: rgba(248, 231, 233, 0.5);
-  padding: 24px 112px 48px 112px;
+  padding: 24px 196px 48px 196px;
 }
 
 h2 {
@@ -17,20 +17,12 @@ h2 {
 }
 
 .dropdown {
-  // background-color: #fe5055;
-  // border-radius: 50px;
-  // color: #fbecea;
-  // font-family: 'Kentledge';
-  // margin-left: 8px;
-  // margin-bottom: 16px;
-
   font-size: 15px;
   background-color: white;
   border: 2px solid #fe5055;
   border-radius: 50px;
   color: #fe5055;
   font-family: 'Kentledge';
-  // margin-left: 8px;
   margin-left: 8px;
   margin-bottom: 16px;
 }
@@ -41,31 +33,20 @@ h2 {
 
 
 .submit-btn-group {
-  // border: 1px solid #fe5055;
-  // border-radius: 50px;
-  // color: #fe5055;
-  // font-family: 'Kentledge';
-  // margin-left: 8px;
-  // margin-bottom: 16px;
-  // background-color: rgba(248, 231, 233, 0.5);
-  font-size: 15px;
-  margin: 0 8px;
-  margin-bottom: 16px;
-  padding: 3px 20px;
-  border-radius: 100px;
-  background-color: #fe5055;
-  border: 3px solid #fe5055;
+  padding: 5px 20px;
+  border: 2px solid #fe5055;
   border-radius: 50px;
   color: #fe5055;
   font-family: 'Kentledge';
   margin-left: 8px;
   margin-bottom: 16px;
+  background-color: rgba(248, 231, 233, 0.5);
 }
 
-// .submit-btn-group:hover {
-//   color: #fe5055;
-//   border: 1px solid #fe5055;
-// }
+.submit-btn-group:hover {
+  color: #fe5055;
+  border: 2px solid #fe5055;
+}
 
 .group-cards-container {
   margin-top: 32px;
@@ -126,6 +107,7 @@ h2 {
   font-size: 18px;
   color: grey;
   padding-bottom: 20px;
+  font-family: 'Neucha', cursive;
 }
 
 .group-about-index {
@@ -134,8 +116,9 @@ h2 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  height: 36px;
-  font-size: 12px;
+  height: 42px;
+  font-size: 14px;
+  margin-top: 32px;
 }
 
 .group-name {
@@ -149,7 +132,7 @@ h2 {
 
 .group-index-divider {
   color: #7f0924;
-  margin: 12px 20px 20px 20px;
+  margin: 24px 20px 24px 20px;
   max-height: 2px;
   min-height: 2px;
   border-radius: 2px;
