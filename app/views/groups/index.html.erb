@@ -1,6 +1,6 @@
-<div class="group-container-show-index container">
-  <div>
-    <h2 class="group-index-heading">There are <%= @groups.count %> groups near you</h2>
+<div class="group-container-show-index">
+  <div class="heading">
+    <h2>There are <%= @groups.count %> groups near you</h2>
   </div>
 
   <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
@@ -12,17 +12,18 @@
   <% end %>
 
   <div class="group-cards-container">
-  <% @groups.each do |group| %>
+    <% @groups.each do |group| %>
     <div class="group-card">
       <img class="group-img-index" src=<%= group.image_url %> alt="">
       <div class="group-card-info">
         <h3><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></h3>
-        <h4 class="group-category-index"><%= group.category %></h4>
         <h4 class="fw-bold group-location-index"><%= group.location %></h4>
+        <h4 class="group-category-index"><%= group.category %></h4>
+
         <p class="group-about-index"><%= group.about%></p>
       </div>
     </div>
+    <hr class="group-index-divider">
     <% end %>
   </div>
-
 </div>
