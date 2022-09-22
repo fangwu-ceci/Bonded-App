@@ -17,7 +17,7 @@
     </div>
       <%= form_tag(users_path, :method => "get", id: "user-search-form") do %>
         <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
-        params[:location]), prompt: 'Any location', class: 'dropdown btn' %>
+        params[:location]), prompt: 'Any location', class: 'dropdown btn qwerty' %>
         <%= select_tag :min_age, options_for_select(18..65, params[:min_age]), prompt: 'Min age', class: 'dropdown btn' %>
         <%= select_tag :max_age, options_for_select(18..65, params[:max_age]), prompt: 'Max age', class: 'dropdown btn' %>
         <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Any gender', class: 'dropdown btn' %>
@@ -40,7 +40,7 @@
                 <div class="user-index-indiv-card-profile">
                 <div class="my-profile">
                   <h3 class="user-index-indiv-card-profile-name">
-                    <strong><%= link_to user.first_name, user_path(user), class: "user-index-name"  %> <%= link_to user.last_name, user_path(user), class: "user-index-name" %></strong>
+                    <strong><%= link_to "#{user.first_name} #{user.last_name}", user_path(user), class: "user-index-name"  %></strong>
                   </h3>
                     <% if user == current_user %>
                       <p>My profile</p>
