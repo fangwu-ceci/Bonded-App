@@ -40,8 +40,9 @@
   <div class="text-center discussion-container">
     <div class="discussion-card">
       <% @group.posts.each do |post| %>
-        <div class="card-title-container">
-          <div class="card-title-item ">
+        <%= content_tag :div, class: "card-title-container", id: dom_id(post) do %>
+        <%# <div class="card-title-container"> %>
+          <div class="card-title-item">
             <%= image_tag post.user.avatar_url, class:"avatar" %>
           </div>
           <div class="nickname-group-show discussion-card-title">
@@ -50,7 +51,7 @@
                 <p class="nickname-discussion text-xl-left fw-bold"> <%= post.user.nickname %></p>
               </div>
               <div class="created-at-show card-title-item">
-                <p class="created-at-align text-xl-left"><%= post.created_at %></p>
+                <p class="created-at-align text-xl-left"><%= post.created_at.localtime.strftime("at %I:%M%p") %></p>
               </div>
             </div>
             <div class="break"></div>
@@ -58,7 +59,8 @@
               <p class="post-content-group-show text-md-left"><%= post.content %></p>
             </div>
           </div>
-        </div>
+        <%# </div> %>
+        <% end %>
       <% end %>
     <%# <h4 class="post-your-comments">Post Your Comments</h4> %>
     </div>
@@ -67,7 +69,4 @@
       <%= submit_tag "Post", class: "post-btn btn" %>
     <% end %>
   </div>
-
-
-
 </div>
