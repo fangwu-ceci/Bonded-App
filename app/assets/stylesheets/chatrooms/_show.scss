@@ -27,7 +27,16 @@
   .messages {
     height: 100%;
     overflow: scroll;
-    padding: 0 10px;
+    padding: 20px 27px;
+    p {
+      font-size: 15px;
+    }
+
+    i {
+      font-size: 13px;
+      margin-left: 10px;
+      margin-top: 0px;
+    }
   }
 
   #new_message {
@@ -84,5 +93,6 @@
 
 .msg-send-btn {
   padding-top: 11px;
+  padding-right: 30px;
   align-content: center;
 }

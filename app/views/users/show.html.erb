@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="user-show-groups">
-        <h2 class="h2-groups">Groups</h2>
+        <h2 class="h2-groups">Groups (<%= @user.user_groups.count %>)</h2>
         <div class="user-show-group-card">
           <% @user_groups.each do |user_group| %>
             <div class="single-group-card">
