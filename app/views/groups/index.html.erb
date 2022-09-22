@@ -5,10 +5,10 @@
 
   <%= form_tag(groups_path, :method => "get", id: "search-form") do %>
     <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
-        params[:location]), prompt: 'Any Location', class: 'dropdown btn' %>
+        params[:location]), prompt: 'Any location', class: 'dropdown btn' %>
     <%= select_tag :category, options_for_select(["Sport & Fitness", "Films", "Technology", "Pets & Animals", "Music", "Art & Culture", ],
-        params[:category]), prompt: 'Any Category', class: 'dropdown btn' %>
-    <%= submit_tag "Search", class: "submit-btn-group btn" %>
+        params[:category]), prompt: 'Any category', class: 'dropdown btn' %>
+    <%= submit_tag "Find", class: "submit-btn-group btn" %>
   <% end %>
 
   <div class="group-cards-container">
@@ -17,13 +17,12 @@
       <img class="group-img-index" src=<%= group.image_url %> alt="">
       <div class="group-card-info">
         <h3><strong><%= link_to group.name, group_path(group), class: "group-name" %></strong></h3>
-        <h4 class="fw-bold group-location-index"><%= group.location %></h4>
         <h4 class="group-category-index"><%= group.category %></h4>
-
+        <h4 class="fw-bold group-location-index"><%= group.location %></h4>
         <p class="group-about-index"><%= group.about%></p>
       </div>
     </div>
-    <hr class="group-index-divider">
+
     <% end %>
   </div>
 </div>

@@ -41,8 +41,9 @@
 .group-show-avatar {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
   margin: 8px 0px 16px 24px;
+  border-radius: 50%;
+  object-fit: contain;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -131,10 +132,10 @@
   margin-bottom: 48px;
 }
 
-.card-title-item {
-  margin-left: 10px;
-  margin-top: 5px;
-}
+// .card-title-item {
+//   margin-left: 10px;
+//   margin-top: 5px;
+// }
 
 .nickname-group-show {
   font-size: 12px;
@@ -143,19 +144,10 @@
   // margin-right: 15px;
 }
 
-.discussion-card-title {
-  // display: flex;
-  // flex-wrap: wrap;
-  // position: absolute;
-  // top: 0;
-  // left: 50px;
-}
-
-.card-title-item {
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 40px;
-}
+// .card-title-item {
+//   margin-left: 10px;
+//   margin-top: 5px;
+// }
 
 .created-at-show {
   color: gray;

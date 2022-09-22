@@ -17,11 +17,11 @@
     </div>
       <%= form_tag(users_path, :method => "get", id: "user-search-form") do %>
         <%= select_tag :location, options_for_select(["London", "Bristol", "Manchester", "Liverpool", "Cambridge", "Canterbury", "Birmingham", "Brighton", "Bath", "Reading" ],
-        params[:location]), prompt: 'Location', class: 'dropdown btn' %>
+        params[:location]), prompt: 'Any location', class: 'dropdown btn' %>
         <%= select_tag :min_age, options_for_select(18..65, params[:min_age]), prompt: 'Min age', class: 'dropdown btn' %>
         <%= select_tag :max_age, options_for_select(18..65, params[:max_age]), prompt: 'Max age', class: 'dropdown btn' %>
-        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Gender', class: 'dropdown btn' %>
-        <%= submit_tag "Search", class: 'index-search-btn btn-info' %>
+        <%= select_tag :gender, options_for_select(["Male", "Female"], params[:gender]), prompt: 'Any gender', class: 'dropdown btn' %>
+        <%= submit_tag "Find", class: 'index-search-btn btn-info' %>
       <% end %>
     </div>
     <div class="user-index-card row g-3">
@@ -38,7 +38,14 @@
                   <%# <% end %>
                 </div>
                 <div class="user-index-indiv-card-profile">
-                  <h3 class="user-index-indiv-card-profile-name"> <strong><%= user.first_name %> <%= user.last_name %> </strong></h3>
+                <div class="my-profile">
+                  <h3 class="user-index-indiv-card-profile-name">
+                    <strong><%= link_to user.first_name, user_path(user), class: "user-index-name"  %> <%= link_to user.last_name, user_path(user), class: "user-index-name" %></strong>
+                  </h3>
+                    <% if user == current_user %>
+                      <p>My profile</p>
+                    <% end %>
+                </div>
                 <div class="user-index-profile-info">
                   <p>
                     <i class="fa-solid fa-cake-candles"></i>
@@ -56,7 +63,7 @@
                   </p>
                 </div>
                   <p class="text-md-left"> <%= user.about %></p>
-                  <%= button_to "View Profile", user_path(user), :method => "get", class: "view-profile-btn" %>
+                  <%#= button_to "View Profile", user_path(user), :method => "get", class: "view-profile-btn" %>
                 </div>
                </div>
               </div>
