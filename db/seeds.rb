@@ -53,7 +53,7 @@ user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", g
 user8 = User.create!(first_name: "Elizabeth", last_name: "Taylor", nickname: "Lizzy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "lizzy@taylor.com", password: "123456",
   about: "I am a passionate baker. I love baking lots of cakes in my spare time and would love to find a friend to bake cakes with. Next cake on my list to bake is Japanese cheesecake. Any tips would be appreciated :)",
   avatar_url: "https://dspncdn.com/a1/media/692x/31/65/9a/31659a89b43bb91275434210971740b3.jpg")
-user9 = User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "Male", age: age.sample, location: uk_cities.sample, email: "oliver@jones.com", password: "123456",
+user9 = User.create!(first_name: "Oliver", last_name: "Jones", nickname: "Ollie", gender: "Male", age: age.sample, location: "London", email: "oliver@jones.com", password: "123456",
   about: "Expanding my social circle, meeting like-minded friends to check out new foodie haunts and do more activities together.  I love Italian, Spanish and French food and have a long list of restaurants to try out. If you're a foodie, I'd love to check out some of these restaurants together!",
   avatar_url:"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFsZSUyMHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&w=1000&q=80")
 
