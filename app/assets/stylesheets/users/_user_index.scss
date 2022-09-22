@@ -36,6 +36,7 @@
   max-width: 800px;
   width: 60%;
   margin: 5px auto;
+  margin-bottom: 10px;
 }
 
 .user-index-indiv-cards {
@@ -133,7 +134,7 @@
     font-family: 'Kentledge';
     margin-left: 8px;
   }
- 
+
   #min_age {
     font-size: 15px;
     background-color: white;
@@ -239,14 +240,29 @@
   color: #fff;
 }
 
+.user-index-card {
+  padding-bottom: 30px;
+}
 
-// font-size: 15px;
-//     margin: 0 8px;
-//     margin-bottom: 16px;
-//     padding: 3px 20px;
-//     border-radius: 100px;
-//     background-color: #fe5055;
-//     border: 3px solid #fe5055;
-//     border-radius: 50px;
-//     transition: all .15s ease-in-out;
-//     color: #fff;
+.user-index-indiv-card-profile-name {
+  margin-right: 25px;
+  .user-index-name {
+    color: #7f0924;
+    font-family: 'Neucha', cursive;
+  }
+  .user-index-name:hover {
+    color: #fe5055;
+  }
+}
+
+.my-profile {
+  display: flex;
+  p {
+    margin-top: 1px;
+    font-size: 12px;
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 10px;
+    padding: 4px 6px;
+  }
+}
