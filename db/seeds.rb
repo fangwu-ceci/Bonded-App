@@ -46,7 +46,7 @@ user5 = User.create!(first_name: "Nicolas", last_name: "Johnson", nickname: "Nic
   avatar_url:"https://img.freepik.com/free-photo/portrait-cheerful-caucasian-man_53876-13440.jpg?w=2000")
 user6 = User.create!(first_name: "Jennifer", last_name: "Smith", nickname: "Jenny", gender: "Female", age: 29, location: "London", email: "jenny@smith.com", password: "123456",
   about: "Originally from the US, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
-  avatar_url:"https://shotkit.com/wp-content/uploads/2020/04/max-ilienerwise-FVaLDrhGo_o-unsplash.jpg")
+  avatar_url:"https://i0.wp.com/www.hadviser.com/wp-content/uploads/2021/03/1-layered-haircut-for-square-faces-CUP9gE7LdhQ.jpg?resize=891%2C1002&ssl=1")
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "Female", age: age.sample, location: uk_cities.sample, email: "emma@baker.com", password: "123456",
   about: "Keen traveller and explorer, want to find some nice friends to enjoy this beautiful city with. Also looking for a fitness buddy to join some classes together e.g. yoga, climbing, spinning. Would prefer to meet friends who live local to me.",
   avatar_url: "https://images.unsplash.com/photo-1597248374161-426f0d6d2fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmVhdXRpZnVsJTIwd29tYW58ZW58MHx8MHx8&w=1000&q=80")
