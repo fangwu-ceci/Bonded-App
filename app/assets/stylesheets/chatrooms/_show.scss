@@ -55,27 +55,11 @@
   }
 
   .send-msg-btn {
-    // font-size: 15px;
-    // margin: 20px 20px;
-    // // margin: 0px 100px;
-    // margin-right: 100px;
-    // padding: 10px 30px;
-    // border-radius: 100px;
-    // background-color: #fe5055;
-    // border: 3px solid #fe5055;
-    // border-radius: 50px;
-    // -webkit-transition: all .15s ease-in-out;
-    // transition: all .15s ease-in-out;
-    // color: #fff;
     font-size: 15px;
-    // margin: 0 8px;
-    // margin-bottom: 16px;
     padding: 3px 20px;
-    // border-radius: 100px;
     background-color: #fe5055;
     border: 3px solid #fe5055;
     border-radius: 50px;
-    // transition: all .15s ease-in-out;
     color: #fff;
   }
 }
@@ -95,4 +79,18 @@
   padding-top: 11px;
   padding-right: 30px;
   align-content: center;
+}
+
+.message-received {
+  max-width: 75%;
+  margin: 2px  20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.message-received-text {
+  padding: 10px;
+  min-height: 20px;
+  background-color: #F8E7E5;
+  border-radius: 4px 20px 20px 4px;
 }
