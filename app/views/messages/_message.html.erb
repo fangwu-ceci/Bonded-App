@@ -1,7 +1,13 @@
-<div id="message- <%= message.id %> ">
-  <small>
+<div id="message- <%= message.id %>">
+<small>
     <strong> <%= message.user.nickname %></strong>
     <i> <%= message.created_at.localtime.strftime("%e %b %Y, %H:%M")%></i>
   </small>
-  <p> <%= message.content %> </p>
+  <div class="message-group-received">
+    <div class="message-received">
+      <div class="message-received-text">
+        <%= message.content %>
+      </div>
+    </div>
+  </div>
 </div>

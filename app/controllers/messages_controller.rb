@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  
+
   def create
     @chatroom = Chatroom.find(params[:chatroom_id])
     @message = Message.new(message_params)
@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
       ChatroomChannel.broadcast_to(
         @chatroom, render_to_string(
           partial: "message",
-          locals: {message: @message})
+          locals: { message: @message })
       )
       head :ok # dont send a view, dont make them re-direct
     else
