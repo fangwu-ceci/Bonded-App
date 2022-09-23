@@ -51,7 +51,7 @@
                 <p class="nickname-discussion text-xl-left fw-bold"> <%= post.user.nickname %></p>
               </div>
               <div class="created-at-show card-title-item">
-                <p class="created-at-align text-xl-left"><%= post.created_at.localtime.strftime("at %I:%M%p") %></p>
+                <p class="created-at-align text-xl-left"><%= post.created_at.localtime.strftime("%e %b %Y, %H:%M") %></p>
               </div>
             </div>
             <div class="break"></div>

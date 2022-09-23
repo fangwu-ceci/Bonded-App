@@ -34,10 +34,10 @@ user1 = User.create!(first_name: "Gemma", last_name: "Smith", nickname: "Gem", g
   avatar_url: "https://cdn2.stylecraze.com/wp-content/uploads/2013/11/Beautiful-Chinese-Women5.jpg")
 user2 = User.create!(first_name: "Jenny", last_name: "Johnson", nickname: "Jen", gender: "Female", age: age.sample, location: uk_cities.sample, email: "jen@johnson.com", password: "123456",
   about: "I've been working in the creative industry for some time, I have developed a strong interest in art and music. Looking to find some cool friends to checkout new art exhibitions and cool gigs in town. I'm also very passionate about empowering women and would like to find other wonder-women to change the world together. ",
-  avatar_url: "https://external-preview.redd.it/gyrwQ5fIJ_bI9xUUxSbKSwnmO6TqsJRVevCfsborcwg.jpg?auto=webp&s=d0752e8650570ae74ba9775088b4da1de6a78ccf")
+  avatar_url: "https://i.pinimg.com/474x/98/0a/75/980a758e6596aec603f9d631716a2ad7--women-hair-styles-ferris-bueller.jpg")
 user3 = User.create!(first_name: "Alice", last_name: "Brown", nickname: "Ally", gender: "Female", age: age.sample, location: uk_cities.sample, email: "alice@brown.com", password: "123456",
   about: "I’m always up for long walks in nature, or driving the scenic route. I write articles, take photographs and sing in the car…badly. I want to know what you’re into…what’s your motivation? There was no uncomplicated option for ‘have a kid’, but I have a kid (and she’s really cool).",
-  avatar_url: "https://shotkit.com/wp-content/uploads/2020/04/max-ilienerwise-FVaLDrhGo_o-unsplash.jpg")
+  avatar_url: "https://external-preview.redd.it/gyrwQ5fIJ_bI9xUUxSbKSwnmO6TqsJRVevCfsborcwg.jpg?auto=webp&s=d0752e8650570ae74ba9775088b4da1de6a78ccf")
 user4 = User.create!(first_name: "Amy", last_name: "Jones", nickname: "Amy", gender: "Female", age: age.sample, location: uk_cities.sample, email: "amy@jones.com", password: "123456",
   about: "I am a freelance writer. I love travelling and writing stories. I have been to over 30 countries and 200 cities. I'd like to find like-minded friends to travel together. My next destination is Argentina. I prefer mountains over beaches.",
   avatar_url: "https://images.unsplash.com/photo-1552699611-e2c208d5d9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVtYWxlJTIwcG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80")
@@ -46,7 +46,7 @@ user5 = User.create!(first_name: "Nicolas", last_name: "Johnson", nickname: "Nic
   avatar_url:"https://img.freepik.com/free-photo/portrait-cheerful-caucasian-man_53876-13440.jpg?w=2000")
 user6 = User.create!(first_name: "Jennifer", last_name: "Smith", nickname: "Jenny", gender: "Female", age: 29, location: "London", email: "jenny@smith.com", password: "123456",
   about: "Originally from the US, I moved to London before the pandemic. I work in the city and live near Angel. I go to the gym pretty regularly (because of my love for food!). I am also a movie enthusiast and run a movie group in Bonded.",
-  avatar_url:"https://i.pinimg.com/474x/98/0a/75/980a758e6596aec603f9d631716a2ad7--women-hair-styles-ferris-bueller.jpg")
+  avatar_url:"https://shotkit.com/wp-content/uploads/2020/04/max-ilienerwise-FVaLDrhGo_o-unsplash.jpg")
 user7 = User.create!(first_name: "Emma", last_name: "Baker", nickname: "Emma", gender: "Female", age: age.sample, location: uk_cities.sample, email: "emma@baker.com", password: "123456",
   about: "Keen traveller and explorer, want to find some nice friends to enjoy this beautiful city with. Also looking for a fitness buddy to join some classes together e.g. yoga, climbing, spinning. Would prefer to meet friends who live local to me.",
   avatar_url: "https://images.unsplash.com/photo-1597248374161-426f0d6d2fc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmVhdXRpZnVsJTIwd29tYW58ZW58MHx8MHx8&w=1000&q=80")
